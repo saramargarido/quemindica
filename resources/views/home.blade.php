@@ -4,7 +4,7 @@
 
 @section('style')
     @parent
-    <link rel="stylesheet" href="{{ asset('/css/home.css') }}">
+    <link rel="stylesheet" href="{{ asset('/public/css/home.css') }}">
 @endsection
 
 @section('header')
@@ -19,7 +19,7 @@
 
             {{-- BANNER --}}
 
-            <img src="{{ asset('/imagens/institucional/trabalhadores-lupa.png') }}" class="img-fluid"
+            <img src="{{ asset('/public/imagens/institucional/trabalhadores-lupa.png') }}" class="img-fluid"
                 alt="Banner Principal">
 
             <div class="row">
@@ -91,7 +91,7 @@
                     </p>
                 </div>
                 <div class="col-xs-4 col-sm-6">
-                    <img src="{{ asset('/imagens/institucional/rede-social.png') }}" class="img-fluid">
+                    <img src="{{ asset('/public/imagens/institucional/rede-social.png') }}" class="img-fluid">
                 </div>
             </div>
 
@@ -106,7 +106,7 @@
             <div class="row align-items-center">
 
                 <div class="col-xs-4 col-sm-6">
-                    <img src="{{ url('/imagens/institucional/team.png') }}" class="img-fluid worker"
+                    <img src="{{ url('/public/imagens/institucional/team.png') }}" class="img-fluid worker"
                         alt="Banner Trabalhadores Time">
                 </div>
 
@@ -116,7 +116,7 @@
                         </strong>
                     </h3>
 
-                    <img src="{{ url('/imagens/logo/logo-icon.svg') }}" id="logo_banner"
+                    <img src="{{ url('/public/imagens/logo/logo-icon.svg') }}" id="logo_banner"
                         class="rounded mx-auto d-block img-fluid" alt="Imagem Logo">
 
                     <p class="text-center">
