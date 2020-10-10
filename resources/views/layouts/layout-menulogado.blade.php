@@ -11,7 +11,7 @@
 
         {{-- TÍTULO --}}
         <a href="{{ route('user', Auth::user()->username) }}">
-            <img src="{{ asset('/imagens/institucional/logo-icon.svg') }}" class="img-fluid logo-menu-logado">
+            <img src="{{ asset('/imagens/logo/logo-icon.svg') }}" class="img-fluid logo-menu-logado">
         </a>
 
         <a class="navbar-brand titulo-menu-logado" href="{{ route('user', Auth::user()->username) }}">QUEM
