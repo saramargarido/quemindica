@@ -1,0 +1,1085 @@
+/* === SCROLL === */
+.scroll::-webkit-scrollbar {
+    width: 5px;
+    height: 10px;
+}
+
+/* aqui é para personalizar o fundo da barra, neste caso estou colocando um fundo cinza escuro*/
+.scroll::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* aqui é a alça da barra, que demonstra a altura que você está na página
+    estou colocando uma cor azul clara nela*/
+.scroll::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 0 0 20px 20px;
+}
+
+/* CAPA PERFIL */
+
+.capa-perfil {
+    position: relative;
+}
+
+.capa {
+    background: url("../imagens/institucional/capa-perfil.jpg") center;
+    background-size: cover;
+    height: 400px;
+}
+
+.icon-change {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: #00415e;
+    border-radius: 50%;
+}
+
+.icon-change img {
+    padding: 8px;
+    width: 40px;
+}
+
+/* ----------HEADER BIO */
+
+.header-bio {
+    position: relative;
+    max-width: 480px;
+    margin: 0 auto 32px;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+/* FOTO E NOME DO USUÁRIO */
+
+.profile-section {
+    position: relative;
+    margin: 0 0 -80px;
+    background-color: #00415e;
+}
+
+/* PONTUAÇÃO USUÁRIO */
+
+.stars {
+    margin-top: -90px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.stars i {
+    font-size: 1.5em;
+    color: #ffd559;
+}
+
+.text-points {
+    color: #ccc;
+    font-size: 0.8em;
+}
+
+.text-rating {
+    color: #ccc;
+    font-size: 0.9em;
+    margin-top: -10px;
+}
+
+/* NOME USUÁRIO */
+
+.user-name {
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #333;
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+
+/* FOTO USÁRIO */
+
+.user-photo {
+    position: relative;
+    top: -110px;
+    display: block;
+    width: 180px;
+    border: 5px solid #fff;
+    margin: 0 auto -16px;
+    border-radius: 100%;
+
+    box-shadow: 1px 1px 2px #333, 0 15px 12px #00000038;
+}
+
+.default-photo-user {
+    position: relative;
+    width: 100%;
+    border-radius: 100%;
+    height: 170px;
+    width: 170px;
+}
+
+.content-perfil {
+    margin-top: 60px;
+    background-color: #00415e;
+}
+
+/* BOTÕES ADICIONAR E MENSAGEM */
+
+.add-message-perfil a:hover {
+    text-decoration: none;
+}
+
+.add-friend {
+    color: #fdcf46;
+    font-size: 1.3em;
+}
+
+.add-friend:hover {
+    color: #8f8f8f;
+    cursor: pointer;
+}
+
+[data-title]:hover:after {
+    opacity: 1;
+    transition: all 0.1s ease 0.5s;
+    visibility: visible;
+}
+
+[data-title]:after {
+    content: attr(data-title);
+    background-color: #007592;
+    color: #fdcf46;
+    font-size: 0.9em;
+    position: absolute;
+    padding: 1px 5px 2px 5px;
+    bottom: -1.6em;
+    left: 100%;
+    white-space: nowrap;
+    box-shadow: 1px 1px 3px #007592;
+    opacity: 0;
+    border: 1px solid #007592;
+    z-index: 99999;
+    visibility: hidden;
+}
+
+[data-title] {
+    position: relative;
+}
+
+
+.messaga-button {
+    padding: 8px;
+    margin: -30px 0 30px 10px;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+
+    box-shadow: 1px 1px 2px #333, 0 3px 3px #0000003b;
+}
+
+.messaga-button a:hover {
+    text-decoration: none;
+}
+
+.messaga-button {
+    background-color: #ffd559;
+    border: solid 1px #ffd559;
+    color: #007592;
+}
+
+.messaga-button:hover {
+    background-color: #e6ebee;
+    border: solid 1px #e6ebee;
+    color: #007592;
+    font-weight: bold;
+}
+
+.messaga-button:focus {
+    outline: none;
+}
+
+/* --------------------MENU ESQUERDO */
+
+@media (min-width: 900px) {
+    .card-sticky {
+        position: sticky;
+        top: 90px;
+        height: 84vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        z-index: 999;
+    }
+}
+
+/* ÁREA PONTOS E INDICAÇÕES */
+
+.section-left-menu {
+    margin-bottom: 60px;
+}
+
+.rating-perfil {
+    margin-top: -40px;
+}
+
+.rating-perfil i {
+    font-size: 1em;
+    color: #ffd559;
+    margin-top: 50px;
+}
+
+.rating-perfil span {
+    font-size: 0.7em;
+    font-weight: 600;
+    color: #808080;
+}
+
+/* BIO USUÁRIO */
+
+.bio-user p {
+    margin-top: 30px;
+    color: #00415e;
+    font-size: 0.9em;
+}
+
+/* ÁREA LINKS MENU ESQUERDO */
+
+.menu-links a {
+    padding: 6px;
+    font-size: 0.9em;
+    text-decoration: none;
+    color: #007592;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.menu-links a:hover {
+    color: #ffd559;
+    font-weight: #ffd559;
+}
+
+.menu-links i {
+    color: #007592;
+    font-size: 1.1em;
+    padding: 10px;
+}
+
+/* ÁREA TAGS */
+
+.tags-section {
+    padding: 10px 0px;
+}
+
+.tags-section h5 {
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+.profile-tags {
+    padding: 10px;
+}
+
+.profile-tags a {
+    font-size: 10px;
+    text-decoration: none;
+}
+
+.followed-tags span {
+    display: inline-block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.rounded-tag-style {
+    border: 1px solid #ffe8a1;
+    background-color: #ffe8a1;
+    border-radius: 25px;
+    padding: 4px 8px;
+    color: #00b2df;
+    transition: all 300ms ease-in-out;
+}
+
+.rounded-tag-style:hover {
+    border: 2px solid #ffd559;
+    color: #00b2df;
+    background-color: #fff;
+}
+
+/* ------------ CONTEUDO */
+
+.section-posts {
+    margin-bottom: 30px;
+}
+
+.section-posts .card-sticky {
+    height: auto;
+}
+
+/* SEÇÃO POSTS */
+
+/* TIPO DE INDICAÇÃO */
+
+.choose-post p {
+    font-size: 1.1em;
+    color: #007592;
+    font-weight: bold;
+}
+
+.displayNone {
+    display: none;
+}
+
+.noScroll {
+    overflow: hidden;
+}
+
+/* CARDS - ESCOLHER O TIPO DE INDICAÇÃO */
+
+.postCard {
+    box-shadow: 0 4px 8px 0 #00000033;
+    transition: 0.3s;
+    width: 80px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.postCard:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 #00000033;
+}
+
+.postCard img {
+    width: 100%;
+    padding: 15%;
+    margin: 0 auto;
+    border-radius: 5px 5px 0 0;
+}
+
+/* MENSAGEM DO POST CRIADO */
+
+.alert-info {
+    height: 50px;
+    color: #007592;
+    background-color: #ffda69;
+    border: none;
+    margin-top: 15px;
+}
+
+
+/* BOTÃO VOLTAR PARA OS TIPOS DE INDICAÇÕES */
+.backIcon i {
+    width: 30px;
+    padding: 10px 30px;
+    float: right;
+    color: #007592;
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.backIcon i:hover {
+    color: #ffcd36;
+    cursor: pointer;
+}
+
+/* ESCREVER INDICAÇÃO */
+
+.section-posts textarea {
+    resize: none;
+    color: #007592;
+}
+
+/* ESCREVER INDICAÇÕES */
+
+/* ESCREVER INDICAÇÃO SERVIÇO, PRODUTO, CULTURA */
+
+.form-service label,
+.form-product label,
+.form-culture label {
+    color: #7c7c7c;
+}
+
+.input-service,
+.input-product,
+.input-culture {
+    outline: none;
+    border: 1px solid #007592;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+    color: #007592;
+    font-size: 0.9em;
+}
+
+.input-service::placeholder,
+.input-product::placeholder,
+.input-culture::placeholder {
+    color: #007592;
+    /* padding: 5px; */
+}
+
+.input-email-service {
+    text-transform: lowercase;
+}
+
+select {
+    border: none;
+    outline: none;
+}
+
+option {
+    font-size: 1em;
+}
+
+
+.form-culture textarea {
+    margin-top: 15px;
+}
+
+
+.form-service textarea {
+    margin-top: 10px;
+}
+
+
+/* ESTRELAS PARA AVALIAÇÃO DE CULTURA */
+
+.label-culture-star {
+    display: block;
+}
+
+.rating {
+    display: inline-block;
+    font-size: 1em;
+}
+
+.rating:not(:checked) .rating-input {
+    display: none;
+}
+
+.rating:hover .rating-star:hover,
+.rating:hover .rating-star:hover~label,
+.rating-input.checked~.rating-star {
+    color: #ffcd36;
+}
+
+.rating-input:checked~.rating-star {
+    color: #ffcd36;
+}
+
+.rating-star,
+.rating:hover .rating-star {
+    float: right;
+    margin: 1px;
+}
+
+
+/* ESTRELAS PARA AVALIAÇÃO SERVIÇO */
+
+.stars-rating-service input[type="radio"] {
+    display: none;
+}
+
+.stars-rating-service label i.fas:before {
+    content: "\f005";
+    color: #ffcd36;
+}
+
+.stars-rating-service input[type="radio"]:checked~label i.fas:before {
+    color: #7e7e7e;
+}
+
+.stars-rating-service input[type="radio"] {
+    display: none;
+}
+
+.stars-rating-service label i.fas:before {
+    content: "\f005";
+    color: #ffcd36;
+}
+
+.stars-rating-service input[type="radio"]:checked~label i.fas:before {
+    color: #7e7e7e;
+}
+
+
+/* ESTRELAS PARA AVALIAÇÃO DE PRODUTO */
+
+
+.form-product p,
+.form-product input[type="submit"] {
+    font-size: 1.1em;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+
+.clasificacion {
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+input[type="radio"]:checked~label {
+    color: #ffcd36;
+}
+
+
+/* SEÇÃO POSTS */
+
+.default-message {
+    color: #ffd559;
+    font-size: 1.5em;
+    margin-top: 100px;
+    padding: 40px;
+}
+
+.posts-area button {
+    border: none;
+}
+
+.post-author {
+    margin: -10px;
+    font-size: 1em;
+}
+
+.post-author a {
+    color: #8f8f8f;
+    font-weight: bold;
+}
+
+.post-author :hover {
+    text-decoration: none;
+    color: #007592;
+}
+
+.photo-author-post {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.photo-author-post-log {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* TEMPO DO POST */
+.post-time .time {
+    color: #8f8f8f;
+    font-size: 0.8em;
+}
+
+.post-time i {
+    color: #8f8f8f;
+    font-size: 0.8em;
+    margin-right: 5px;
+}
+
+/* POSTS */
+
+.post-result {
+    padding: 5px;
+}
+
+/* POST DE CULTURA  */
+
+.culture-segment {
+    color: #007592;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 0;
+}
+
+.culture-tittle {
+    color: #696969;
+    font-size: 0.8em;
+    margin-bottom: 30px;
+}
+
+.raintg-culture i {
+    color: #ffd559;
+}
+
+.culture-point {
+    color: #007592;
+    font-size: 0.8em;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* POST DE SERVIÇO */
+
+.raintg-service i {
+    color: #ffd559;
+}
+
+.service-point {
+    color: #007592;
+    font-size: 0.8em;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.service-title {
+    color: #007592;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: -20px;
+    margin-bottom: 0;
+}
+
+.service-segment {
+    color: #696969;
+    font-size: 0.8em;
+    margin: 0;
+}
+
+.service-provider {
+    display: block;
+    font-weight: bold;
+    color: #007592;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 0.9em;
+}
+
+.service-post a {
+    color: #777777;
+    font-weight: bold;
+}
+
+.service-post a:hover {
+    color: #ffd559;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.default-photo-service {
+    width: 200px;
+    margin-top: 15px;
+}
+
+/* POST DE PRODUTO */
+
+.product-title {
+    color: #007592;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin: 0;
+}
+
+.product-segment {
+    color: #696969;
+    font-size: 0.8em;
+}
+
+.product-description {
+    display: block;
+    font-weight: bold;
+    color: #007592;
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 0.9em;
+}
+
+.raintg-product i {
+    color: #ffd559;
+}
+
+.product-point {
+    color: #007592;
+    font-size: 0.8em;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* CONTEÚDO DO POST */
+
+.card-post {
+    background-color: #f1f1f1;
+}
+
+.card-post p {
+    font-size: 1.2em;
+    color: #007592;
+    font-weight: bold;
+    /* margin-top: 20px; */
+}
+
+/* BOTÕES DO POST - REPORTAR E ESCONDER*/
+
+.button-posts span {
+    color: #007592;
+    font-weight: bold;
+}
+
+.button-posts span:hover {
+    color: #ffcd36;
+}
+
+.button-posts i {
+    color: #007592;
+    font-weight: bold;
+}
+
+.icon-post {
+    color: #007592;
+    font-weight: bold;
+}
+
+.icon-post i:hover {
+    color: #ffcd36;
+}
+
+/* NOTIFICAÇÕES DO POST */
+
+.notification {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 6px;
+    position: relative;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.notification .badge {
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 15px;
+    padding: 3px 5px;
+    border-radius: 50%;
+    background: #ffcd36;
+    color: #fff;
+    font-size: 0.7em;
+}
+
+.card-notification-post a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card-notification-post a:hover {
+    font-weight: bold;
+    color: #ffd559;
+}
+
+.card-notification-post i,
+span {
+    color: #007592;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.card-notification-post i:hover,
+span:hover {
+    color: #ffd559;
+    font-weight: #ffd559;
+}
+
+/* COMENTÁRIOS POSTAGENS */
+
+.user-comments {
+    padding: 10px;
+    height: auto;
+}
+
+.user-comments a {
+    text-decoration: none;
+    color: #007592;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.user-comments a:hover {
+    font-weight: bold;
+    color: #ffd559;
+}
+
+/* SEÇÃO COMENTÁRIOS */
+.comments-section {
+    display: inline-block;
+    width: 90%;
+}
+
+.comments-area {
+    width: 90%;
+    list-style: none;
+}
+
+/* COMENTÁRIOS */
+
+.comments {
+    border: 1px solid #fff5d5;
+    display: table-cell;
+    padding: 10px;
+    vertical-align: top;
+    position: relative;
+    width: 45%;
+    background-color: #faf5e3;
+    border-radius: 5px;
+}
+
+.comments p {
+    font-size: 0.9em;
+    line-height: 26px;
+    margin-bottom: 0;
+    max-width: 100%;
+    margin-top: 5px;
+    color: #007592;
+}
+
+.comments::before {
+    border-bottom: 10px solid transparent;
+    border-right: 11px solid #ffd559;
+    border-top: 10px solid transparent;
+    left: -11px;
+    top: 10px;
+    position: absolute;
+    content: "";
+}
+
+/* FOTO AUTOR COMENTÁRIO */
+
+.comment-author-avatar {
+    display: table-cell;
+    vertical-align: top;
+    width: 5%;
+}
+
+.comment-author-avatar img {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    margin-left: 60px;
+}
+
+.sectiont-author-time {
+    display: inline-block;
+    width: 100%;
+}
+
+.sectiont-author-time h5 {
+    font-size: 1em;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.sectiont-author-time .comment-time {
+    color: #696969;
+    font-size: 0.8em;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+/* RESPONDER COMENTÁRIO */
+
+.reply-comment {
+    text-transform: capitalize;
+    font-size: 13px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.sectiont-author-time i {
+    font-size: 0.9em;
+    color: #ffd559;
+}
+
+.sectiont-author-time i:hover {
+    color: #007592;
+}
+
+/* BOTÃO VER MAIS COMENTÁRIOS */
+
+.see-more-comments {
+    display: table;
+    font-size: 1.1em;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    text-transform: capitalize;
+}
+
+/* COMENTAR POST */
+
+.post-comment {
+    margin-top: -20px;
+}
+
+.comment-form {
+    margin-top: 20px;
+    display: inline-block;
+    position: relative;
+    width: 80%;
+}
+
+.comment-textarea textarea {
+    border: 1px solid #ffd559;
+    border-radius: 5px;
+    color: #696969;
+    font-size: 1em;
+    height: 60px;
+    width: 100%;
+    padding: 10px;
+}
+
+.comment-textarea .form-control:focus {
+    border: 1px solid #ffd559;
+    box-shadow: 0 0 0 0.2rem #ffd559a1;
+}
+
+.comment-form button {
+    bottom: 15px;
+    position: absolute;
+    right: 0;
+    background: none;
+    font-weight: bold;
+    color: #007592;
+}
+
+.comment-form button:hover {
+    font-weight: bold;
+    color: #ffd559;
+}
+
+/* BOTÃO VER MAIS COMENTÁRIOS */
+.see-more-comments-perfil {
+    display: table;
+    font-size: 12px;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    text-transform: capitalize;
+}
+
+/* -----------MENU DIREITO */
+/* SEÇÃO AMIGOS PERFIL */
+
+.section-right-menu {
+    margin-bottom: 60px;
+}
+
+/* AMIGOS */
+.section-right-menu h5 {
+    padding: 15px 0;
+    font-weight: bold;
+}
+
+/* BOTÃO VER MAIS AMIGOS */
+.friends-section {
+    padding: 4px;
+}
+
+.default-message-follow {
+    color: #007592;
+    padding: 15px;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.card-friend {
+    margin-top: 10px;
+    border-radius: 15px;
+    width: 100px;
+    box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.following-list {
+    margin-top: 15px;
+}
+
+.following-list ul li {
+    position: relative;
+    list-style: none;
+    float: left;
+    width: 30%;
+    text-align: center;
+}
+
+.following-list ul li img {
+    border-radius: 100%;
+    border: 3px solid #ffd559;
+    width: 70px;
+    height: 70px;
+    margin-bottom: 10px;
+}
+
+.name-following {
+    position: relative;
+    display: block;
+    font-size: 0.8em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #007592;
+}
+
+.card-friend:hover {
+    box-shadow: 0 8px 16px 0 #00000033;
+}
+
+.section-right-menu a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.section-right-menu a:hover {
+    font-weight: bold;
+    color: #ffd559;
+}
+
+.see-more-friends {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.see-more-friends a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #007592;
+}
+
+.see-more-friends a:hover {
+    font-weight: bold;
+    color: #ffd559;
+}
+
+/* SEÇÃO SERVIÇOS */
+
+.services-section a {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.services-section a:hover {
+    font-weight: bold;
+    color: #ffd559;
+}
+
+.services-cards {
+    margin: 10px 10px;
+    border-radius: 15px;
+    width: 80px;
+    height: 80px;
+
+    box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.services-cards:hover {
+    box-shadow: 0 8px 16px 0 #00000033;
+}
+
+.caption-service {
+    /* display: block; */
+    color: #007592;
+}
+
+.section-image-service {
+    display: inline-block;
+}
+
+.see-more-services a {
+    color: #007592;
+}

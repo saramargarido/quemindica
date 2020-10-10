@@ -1,0 +1,96 @@
+.secao-admin-painel {
+    background-color: #e0e0e0;
+    margin-top: 50px;
+    padding: 40px 20px
+}
+
+.secao-admin-painel a {
+    color: #007592;
+}
+
+.secao-admin-painel a:hover {
+    color: #FCDA73;
+    text-decoration: none;
+}
+
+/* MENU CARDS */
+
+.cards-admin {
+    border-radius: 15px;
+}
+
+.card-admin h3 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #6d6d6d;
+}
+
+.card-admin a {
+    text-decoration: none;
+    color: #007592;
+}
+
+.card-admin span {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.card-admin i {
+    font-size: 5em;
+    color: #FCDA73;
+}
+
+.card-b-admin {
+    box-shadow: 0 1px 3px #0000001f,
+        0 1px 2px #0000003d;
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.card-b-admin:hover {
+    box-shadow: 0 14px 28px #00000040,
+        0 10px 10px #00000038;
+}
+
+.media {
+    padding: 20px;
+}
+
+
+/* CONTEÚDO  */
+
+/* PROCURAR */
+
+.conteudo-admin h2 {
+    color: #007592;
+    font-weight: bold;
+}
+
+.secao-pesquisa-admin {
+    width: 400px;
+}
+
+.pesquisar {
+    width: 100%;
+}
+
+.input-pesquisar-admin {
+    padding: 10px;
+    margin-right: -5px;
+    border: 1px solid #FCDA73;
+    border-right: none;
+    height: 34px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.botao-pesquisar-admin {
+    width: 40px;
+    height: 35px;
+    border: 1px solid #FCDA73;
+    background: #FCDA73;
+    text-align: center;
+    color: #fff;
+    border-radius: 0px 5px 5px 0px;
+    font-size: 1em;
+}

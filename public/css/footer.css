@@ -1,0 +1,97 @@
+footer {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.7em;
+    display: inline-block;
+}
+
+.secao-footer {
+    padding: 40px;
+}
+
+.secao-footer h5 {
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+/* MENU FOOTER */
+
+.menu-footer {
+    padding: 10px;
+}
+
+.menu-footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/* NEWSLETTER */
+
+.footer-assinar {
+    padding: 10px;
+}
+
+
+.botao-assinar {
+    color: #e5e5e5;
+    font-weight: bold;
+    background-color: #007592;
+    border-color: #007592;
+}
+
+.botao-assinar:hover {
+    color: #007592;
+    background-color: #FCDA73;
+    border-color: #007592;
+}
+
+
+/* LOCALIZAÇÃO */
+
+.localizacao-footer {
+    padding: 10px;
+    color: #fff;
+}
+
+
+
+/* MIDIAS SOCIAIS */
+
+.social-media a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-media i {
+    padding: 10px;
+}
+
+
+/* COPYRIGHT */
+
+.copyright {
+    color: #fff;
+    background-color: #666;
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+
+
+
+/* === FOOTER LOGADO === */
+
+.footer-logado {
+    bottom: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 999;
+}
