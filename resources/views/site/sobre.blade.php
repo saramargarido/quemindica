@@ -165,7 +165,7 @@
                 <div class="col-xl-2 col-sm-6 mb-5">
                     <div class="bg-white rounded py-5 px-4 avatar-time">
 
-                        <img src="{{ asset('/imagens/time/Millena.png') }}" alt="Avatar Millena" width="100"
+                        <img src="{{ asset('/imagens/time/millena.png') }}" alt="Avatar Millena" width="100"
                             class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
 
                         <h5 class="mb-0">Millena Moschella</h5>
