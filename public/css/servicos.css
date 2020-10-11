@@ -1,6 +1,23 @@
 .section-services {
     height: auto;
-    /* padding-bottom: 30px; */
+    padding-bottom: 30px;
+}
+
+
+/* ÁREA FILTROS */
+
+
+/* FILTRO FIXO NA LATERAL */
+
+@media (min-width: 992px) {
+    .side-filters .service-card-sticky {
+        position: sticky;
+        top: 90px;
+        height: 100vh;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        z-index: 999;
+    }
 }
 
 .side-filters {
@@ -8,22 +25,11 @@
     padding: 50px;
 }
 
-@media (min-width: 900px) {
-    .side-filters .service-card-sticky {
-        position: sticky;
-        top: 90px;
-        height: 84vh;
-        overflow-y: hidden;
-        overflow-x: hidden;
-        z-index: 999;
-    }
-}
-
 
 /* SEÇÃO PESQUISA */
 
 .service-search {
-    margin-top: 60px;
+    margin-top: 100px;
     margin-bottom: 20px;
 }
 
@@ -67,6 +73,7 @@
     color: #fff;
     background-color: #007592;
     box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
+    padding: 30px;
 }
 
 .price-range-service h6 {
@@ -91,26 +98,27 @@
 
 /* SEÇÃO FILTRO CATEGORIA */
 
-.serach-type {
+.service-category {
     margin-left: 0px 10px;
     margin-bottom: 10px;
+    padding: 20px;
     color: #fff;
     background-color: #007592;
     box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
 }
 
-.serach-type h6 {
+.service-category h6 {
     font-weight: bold;
 }
 
-.serach-type input[type='checkbox'] {
+.service-category input[type='checkbox'] {
     display: block;
     float: left;
     position: relative;
     cursor: pointer;
 }
 
-.serach-type input[type='checkbox']:after {
+.service-category input[type='checkbox']:after {
     content: "";
     vertical-align: middle;
     text-align: center;
@@ -123,22 +131,22 @@
     box-shadow: 0 10px 20px #00000030, 0 6px 6px #0000003b;
 }
 
-.serach-type input[type='checkbox']:hover:after,
-.serach-type input[type='checkbox']:checked:hover:after {
+.service-category input[type='checkbox']:hover:after,
+.service-category input[type='checkbox']:checked:hover:after {
     content: '\2714';
     font-weight: bold;
     color: #FCDA73;
     background-color: #006983;
 }
 
-.serach-type input[type='checkbox']:checked:after {
+.service-category input[type='checkbox']:checked:after {
     content: '\2714';
     font-weight: bold;
     color: #FCDA73;
     background-color: #006983;
 }
 
-.serach-type span {
+.service-category span {
     color: #FCDA73;
     margin: 10px;
 }
@@ -147,16 +155,19 @@
 /* ÁREA SERVIÇOS */
 
 .all-services {
-    margin-top: 40px;
-    padding: 50px 40px;
+    margin-top: 20px;
+    padding: 0px 40px;
     background-color: #fff;
 }
 
 .all-services h1 {
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: 80px;
     color: #007592;
 }
+
+
+/* CARD DO SERVIÇO */
 
 .service-card {
     margin-top: 20px;
@@ -164,7 +175,7 @@
 
 .services-cards-all {
     background-color: #FCDA73;
-    padding: 10px;
+    padding: 20px;
     border-radius: 2px;
     box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
     transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
@@ -174,17 +185,34 @@
     box-shadow: 0 14px 28px #00000040, 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.services-cards-all button {
-    margin-top: -20px;
-    margin-left: -20px;
-    color: #006983;
-    font-weight: bold;
-    background-color: #ffffffb9;
+
+/* FOTO SERVIÇO */
+
+.photo-service {
+    align-content: center;
+    margin-top: 10px;
+    width: 240px;
+    height: 150px;
 }
 
-.services-cards-all button:hover {
-    color: #333;
+
+/* BOTÃO CONTRATAR SERVIÇO */
+
+.btn-hire-service {
+    margin-top: -330px;
+    margin-left: -40px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #00698388;
 }
+
+.btn-hire-service:hover {
+    color: #005d74;
+    font-weight: bold;
+}
+
+
+/* INFOS DO SERVIÇO */
 
 .service-card-title {
     font-weight: bold;
@@ -200,9 +228,4 @@
     color: #006983;
     font-size: 0.9em;
     font-weight: bold;
-}
-
-.services-cards-all img {
-    width: 225px;
-    height: 150px;
 }

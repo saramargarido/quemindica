@@ -113,7 +113,7 @@
                                 <div class="search-admin-section">
                                     <form action="{{ url('admin-product') }}" method="GET" class="form-inline busca">
                                         @csrf
-                                        <input type="text" class="search-input-admin" placeholder="search-admin-section">
+                                        <input type="text" class="search-input-admin" placeholder="Pesquisar">
                                         <button type="submit" class="search-admin-btn">
                                             <i class="fa fa-search"></i>
                                         </button>

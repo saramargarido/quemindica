@@ -111,3 +111,12 @@ header {
     font-weight: bold;
     background-color: #FCDA73;
 }
+
+@media (max-width: 991px) {
+    /* BOTÃO SUPORTE */
+    .support-btn {
+        cursor: pointer;
+        justify-content: left;
+        text-align: left;
+    }
+}

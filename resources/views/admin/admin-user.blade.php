@@ -114,7 +114,7 @@
                                     <form action="{{ url('admin') }}" method="GET" class="form-inline busca">
                                         @csrf
                                         <input value="{{ Request::get('busca') }}" name="busca" type="text"
-                                            class="search-input-admin" placeholder="search-admin-section">
+                                            class="search-input-admin" placeholder="Pesquisar">
                                         <button type="submit" class="search-admin-btn">
                                             <i class="fa fa-search"></i>
                                         </button>

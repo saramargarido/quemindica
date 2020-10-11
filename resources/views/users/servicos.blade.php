@@ -20,8 +20,7 @@
 
 
             {{-- SEÇÃO FILTROS --}}
-            <div class="col-lg-3 col-md-4 col-sm-12 side-filters">
-
+            <div class="col-lg-3 col-md-12 col-sm-12 side-filters">
                 <div class="service-card-sticky">
 
                     {{-- ÁREA PESQUISA --}}
@@ -50,7 +49,7 @@
                             <h6 class="title text-center">Faixa de Preço</h6>
                         </div>
 
-                        <div class="service-card-body">
+                        <div class="service-price">
                             <div class="form-row">
 
                                 <div class="form-group col-md-6">
@@ -71,10 +70,10 @@
 
                     {{-- ÁREA FILTRO POR CATEGORIA DO SERVIÇO
                     --}}
-                    <div class="service-card serach-type">
+                    <div class="service-card service-category">
 
                         <div class="service-card-header">
-                            <h6 class="title text-center">Categoria</h6>
+                            <h6 class="title text-center">Segmento</h6>
                         </div>
 
                         <div class="service-card-body">
@@ -87,19 +86,7 @@
                                     </span>
                                 </label>
 
-                                <label class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="moda">
-                                    <span class="form-check-label">
-                                        Moda
-                                    </span>
-                                </label>
 
-                                <label class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="saude">
-                                    <span class="form-check-label">
-                                        Saúde
-                                    </span>
-                                </label>
 
                             </form>
                         </div>
@@ -111,9 +98,9 @@
 
 
             {{-- SEÇÃO SERVIÇOS --}}
-            <div class="col-lg-9 col-md-8 col-sm-12 all-services">
+            <div class="col-lg-9 col-md-12 col-sm-12 all-services">
 
-                <h1 class="text-center">Serviços</h1>
+                <h1 class="text-center title-services-section">Serviços</h1>
 
                 {{-- service-cardS SERVIÇOS --}}
                 <div class="row">
@@ -130,19 +117,19 @@
 
                                     @if ($post->photo == null)
                                         <img src="{{ asset('/imagens/servicos/servico-3.jpg') }}" alt="service-card Serviço"
-                                            class="img-fluid">
+                                            class="photo-service img-fluid">
                                     @else
                                         <img src="{{ asset('uploads/services/' . $post->photo) }}" alt="Foto Serviço"
-                                            class="default-photo-user img-fluid">
+                                            class="photo-service img-fluid">
                                     @endif
 
 
 
                                     {{-- BOTÃO
                                     --}}
-                                    <div class="service-card-img-overlay">
+                                    <div class="service-hire">
                                         <a href="{{ route('servico.show', $post->id) }}">
-                                            <button class="btn Auth::user()->">Contratar
+                                            <button class="btn btn-hire-service">Contratar
                                                 <i class="fa fa-check-square-o"></i>
                                             </button>
                                         </a>

@@ -5,22 +5,20 @@ header {
 
 /* LOGO E TÍTULO QUEM INDICA */
 
-.admin-nav-logo img {
-    width: 50px;
+.logo-nav-admin img {
+    width: 60px;
 }
 
-.admin-qi-title {
+.qi-title-admin {
     color: #FCDA73;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 1em;
 }
 
-.admin-qi-title:hover,
-.navbar-dark-admin:hover,
-.navbar-brand-admin:hover {
-    text-decoration: none;
-    color: #fff;
+.qi-title-admin:hover,
+.navbar-dark,
+.navbar-brand {
+    color: #FCDA73 !important;
 }
 
 
@@ -51,35 +49,44 @@ header {
 
 /* DROWPDOWN MENU */
 
-.avatar-menu-off-admin {
+.avatar-menu-admin {
     width: 40px;
     height: 40px;
 }
 
-.avatar-menu-off-admin:hover {
+.avatar-menu-admin:hover {
     border: 2px solid #FCDA73;
 }
 
-.drop-menuoff-admin {
+.drop-menuoff {
     color: #FCDA73;
 }
 
-.drop-menuoff-admin:hover {
+.drop-menuoff:hover {
     color: #fff;
 }
 
-.menu-links-menuoff-admin {
+.links-menuoff {
     /* border: none; */
     background-color: #007592;
     border: 1px solid #FCDA73;
 }
 
-.menu-links-menuoff-admin a {
+.links-menuoff a {
     color: #FCDA73;
 }
 
-.menu-links-menuoff-admin a:hover {
+.links-menuoff a:hover {
     color: #007592;
     font-weight: bold;
     background-color: #FCDA73;
+}
+
+@media (max-width: 991px) {
+    /* BOTÃO SUPORTE */
+    .support-btn {
+        cursor: pointer;
+        justify-content: left;
+        text-align: left;
+    }
 }
