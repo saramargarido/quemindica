@@ -17,7 +17,7 @@
 
 
     {{-- SEÇÃO AMIGOS --}}
-    <div class="secao-amigos">
+    <div class="following-section">
 
         <h1 class="text-center">Seguindo</h1>
 
@@ -34,7 +34,7 @@
                 @foreach ($user->followers as $follower)
 
                     <div class="col-lg-2 col-md-4 col-sm-12">
-                        <div class="card-amigo">
+                        <div class="following-card-info">
                             <div class="card-front">
 
 
@@ -69,7 +69,7 @@
                                     {{-- </div> --}}
 
                                 {{-- INFOS AMIGO --}}
-                                <div class="card-user">
+                                <div class="following-card">
 
                                     {{-- FOTO AMIGO --}}
                                     <a href="{{ route('user', $follower->username) }}">

@@ -1,28 +1,34 @@
 /* === SCROLL === */
+
 .scroll::-webkit-scrollbar {
     width: 5px;
     height: 10px;
 }
 
+
 /* aqui é para personalizar o fundo da barra, neste caso estou colocando um fundo cinza escuro*/
+
 .scroll::-webkit-scrollbar-track {
     background: transparent;
 }
 
+
 /* aqui é a alça da barra, que demonstra a altura que você está na página
     estou colocando uma cor azul clara nela*/
+
 .scroll::-webkit-scrollbar-thumb {
     background: #ccc;
     border-radius: 0 0 20px 20px;
 }
 
-/* CAPA PERFIL */
 
-.capa-perfil {
+/* cover PERFIL */
+
+.perfil-cover {
     position: relative;
 }
 
-.capa {
+.cover {
     background: url("../imagens/institucional/capa-perfil.jpg") center;
     background-size: cover;
     height: 400px;
@@ -41,6 +47,7 @@
     width: 40px;
 }
 
+
 /* ----------HEADER BIO */
 
 .header-bio {
@@ -52,6 +59,7 @@
     padding: 10px;
 }
 
+
 /* FOTO E NOME DO USUÁRIO */
 
 .profile-section {
@@ -59,6 +67,7 @@
     margin: 0 0 -80px;
     background-color: #00415e;
 }
+
 
 /* PONTUAÇÃO USUÁRIO */
 
@@ -84,6 +93,7 @@
     margin-top: -10px;
 }
 
+
 /* NOME USUÁRIO */
 
 .user-name {
@@ -93,6 +103,7 @@
     margin-top: -20px;
     margin-bottom: 30px;
 }
+
 
 /* FOTO USÁRIO */
 
@@ -104,7 +115,6 @@
     border: 5px solid #fff;
     margin: 0 auto -16px;
     border-radius: 100%;
-
     box-shadow: 1px 1px 2px #333, 0 15px 12px #00000038;
 }
 
@@ -120,6 +130,7 @@
     margin-top: 60px;
     background-color: #00415e;
 }
+
 
 /* BOTÕES ADICIONAR E MENSAGEM */
 
@@ -164,14 +175,12 @@
     position: relative;
 }
 
-
 .messaga-button {
     padding: 8px;
     margin: -30px 0 30px 10px;
     border-radius: 5px;
     font-size: 1em;
     font-weight: bold;
-
     box-shadow: 1px 1px 2px #333, 0 3px 3px #0000003b;
 }
 
@@ -196,6 +205,7 @@
     outline: none;
 }
 
+
 /* --------------------MENU ESQUERDO */
 
 @media (min-width: 900px) {
@@ -208,6 +218,7 @@
         z-index: 999;
     }
 }
+
 
 /* ÁREA PONTOS E INDICAÇÕES */
 
@@ -231,6 +242,7 @@
     color: #808080;
 }
 
+
 /* BIO USUÁRIO */
 
 .bio-user p {
@@ -238,6 +250,7 @@
     color: #00415e;
     font-size: 0.9em;
 }
+
 
 /* ÁREA LINKS MENU ESQUERDO */
 
@@ -260,6 +273,7 @@
     font-size: 1.1em;
     padding: 10px;
 }
+
 
 /* ÁREA TAGS */
 
@@ -302,6 +316,7 @@
     background-color: #fff;
 }
 
+
 /* ------------ CONTEUDO */
 
 .section-posts {
@@ -312,7 +327,9 @@
     height: auto;
 }
 
+
 /* SEÇÃO POSTS */
+
 
 /* TIPO DE INDICAÇÃO */
 
@@ -329,6 +346,7 @@
 .noScroll {
     overflow: hidden;
 }
+
 
 /* CARDS - ESCOLHER O TIPO DE INDICAÇÃO */
 
@@ -352,6 +370,7 @@
     border-radius: 5px 5px 0 0;
 }
 
+
 /* MENSAGEM DO POST CRIADO */
 
 .alert-info {
@@ -364,6 +383,7 @@
 
 
 /* BOTÃO VOLTAR PARA OS TIPOS DE INDICAÇÕES */
+
 .backIcon i {
     width: 30px;
     padding: 10px 30px;
@@ -379,6 +399,7 @@
     cursor: pointer;
 }
 
+
 /* ESCREVER INDICAÇÃO */
 
 .section-posts textarea {
@@ -386,7 +407,9 @@
     color: #007592;
 }
 
+
 /* ESCREVER INDICAÇÕES */
+
 
 /* ESCREVER INDICAÇÃO SERVIÇO, PRODUTO, CULTURA */
 
@@ -428,11 +451,9 @@ option {
     font-size: 1em;
 }
 
-
 .form-culture textarea {
     margin-top: 15px;
 }
-
 
 .form-service textarea {
     margin-top: 10px;
@@ -502,7 +523,6 @@ option {
 
 /* ESTRELAS PARA AVALIAÇÃO DE PRODUTO */
 
-
 .form-product p,
 .form-product input[type="submit"] {
     font-size: 1.1em;
@@ -511,7 +531,6 @@ option {
 input[type="radio"] {
     display: none;
 }
-
 
 .clasificacion {
     direction: rtl;
@@ -563,7 +582,9 @@ input[type="radio"]:checked~label {
     border-radius: 50%;
 }
 
+
 /* TEMPO DO POST */
+
 .post-time .time {
     color: #8f8f8f;
     font-size: 0.8em;
@@ -575,11 +596,13 @@ input[type="radio"]:checked~label {
     margin-right: 5px;
 }
 
+
 /* POSTS */
 
 .post-result {
     padding: 5px;
 }
+
 
 /* POST DE CULTURA  */
 
@@ -606,6 +629,7 @@ input[type="radio"]:checked~label {
     margin-bottom: 30px;
     font-weight: bold;
 }
+
 
 /* POST DE SERVIÇO */
 
@@ -659,6 +683,7 @@ input[type="radio"]:checked~label {
     margin-top: 15px;
 }
 
+
 /* POST DE PRODUTO */
 
 .product-title {
@@ -693,6 +718,7 @@ input[type="radio"]:checked~label {
     font-weight: bold;
 }
 
+
 /* CONTEÚDO DO POST */
 
 .card-post {
@@ -705,6 +731,7 @@ input[type="radio"]:checked~label {
     font-weight: bold;
     /* margin-top: 20px; */
 }
+
 
 /* BOTÕES DO POST - REPORTAR E ESCONDER*/
 
@@ -730,6 +757,7 @@ input[type="radio"]:checked~label {
 .icon-post i:hover {
     color: #ffcd36;
 }
+
 
 /* NOTIFICAÇÕES DO POST */
 
@@ -777,6 +805,7 @@ span:hover {
     font-weight: #ffd559;
 }
 
+
 /* COMENTÁRIOS POSTAGENS */
 
 .user-comments {
@@ -796,7 +825,9 @@ span:hover {
     color: #ffd559;
 }
 
+
 /* SEÇÃO COMENTÁRIOS */
+
 .comments-section {
     display: inline-block;
     width: 90%;
@@ -806,6 +837,7 @@ span:hover {
     width: 90%;
     list-style: none;
 }
+
 
 /* COMENTÁRIOS */
 
@@ -838,6 +870,7 @@ span:hover {
     position: absolute;
     content: "";
 }
+
 
 /* FOTO AUTOR COMENTÁRIO */
 
@@ -874,6 +907,7 @@ span:hover {
     display: inline-block;
 }
 
+
 /* RESPONDER COMENTÁRIO */
 
 .reply-comment {
@@ -892,6 +926,7 @@ span:hover {
     color: #007592;
 }
 
+
 /* BOTÃO VER MAIS COMENTÁRIOS */
 
 .see-more-comments {
@@ -901,6 +936,7 @@ span:hover {
     padding-bottom: 40px;
     text-transform: capitalize;
 }
+
 
 /* COMENTAR POST */
 
@@ -944,7 +980,9 @@ span:hover {
     color: #ffd559;
 }
 
+
 /* BOTÃO VER MAIS COMENTÁRIOS */
+
 .see-more-comments-perfil {
     display: table;
     font-size: 12px;
@@ -953,20 +991,27 @@ span:hover {
     text-transform: capitalize;
 }
 
+
 /* -----------MENU DIREITO */
+
+
 /* SEÇÃO AMIGOS PERFIL */
 
 .section-right-menu {
     margin-bottom: 60px;
 }
 
+
 /* AMIGOS */
+
 .section-right-menu h5 {
     padding: 15px 0;
     font-weight: bold;
 }
 
+
 /* BOTÃO VER MAIS AMIGOS */
+
 .friends-section {
     padding: 4px;
 }
@@ -1045,6 +1090,7 @@ span:hover {
     color: #ffd559;
 }
 
+
 /* SEÇÃO SERVIÇOS */
 
 .services-section a {
@@ -1062,7 +1108,6 @@ span:hover {
     border-radius: 15px;
     width: 80px;
     height: 80px;
-
     box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }

@@ -6,7 +6,7 @@
 {{-- <script defer src="{{ asset('/js/modalfotoPerfil.js') }}"></script>
 --}}
 @endprepend
-
+ 
 @section('title', Auth::user()->name)
 
 @section('style')
@@ -23,13 +23,13 @@
 
 @section('content')
 
-    {{-- CAPA PERFIL --}}
-    <section class="capa-perfil">
-        <div class="capa">
+    {{-- cover PERFIL --}}
+    <section class="perfil-cover">
+        <div class="cover">
             <div class="icon-change">
 
-                {{-- <a href="#" data-toggle="modal" data-target="#modalFotoCapa">
-                    <img src="{{ asset('icones/pencil.svg') }}" alt="Mudar foto de capa">
+                {{-- <a href="#" data-toggle="modal" data-target="#modalFotocover">
+                    <img src="{{ asset('icones/pencil.svg') }}" alt="Mudar foto de cover">
                 </a> --}}
 
             </div>
@@ -815,7 +815,7 @@
 @section('modal')
     {{-- MODAL --}}
     @include('users.modalPhoto')
-    {{-- @include('users.modalCapa') --}}
+    {{-- @include('users.modalcover') --}}
 @endsection
 
 
@@ -824,5 +824,5 @@
 @endsection
 
 <script src="{{ asset('/js/modalfotoPerfil.js') }}"></script>
-{{-- <script src="{{ asset('/js/modalfotoCapa.js') }}"></script>
+{{-- <script src="{{ asset('/js/modalfotocover.js') }}"></script>
 --}}

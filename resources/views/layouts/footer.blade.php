@@ -1,5 +1,5 @@
 <footer>
-    <div class="secao-footer">
+    <div class="footer-section">
         <div class="container">
             <div class="row text-center">
 
@@ -9,7 +9,7 @@
 
                     <h5>Navegação</h5>
 
-                    <div class="menu-footer">
+                    <div class="footer-menu">
                         <p>
                             <a href="{{ url('sobre') }}">Quem Somos</a>
                         </p>
@@ -36,10 +36,10 @@
                 <div class="col-lg-3 col-md-6">
                     <h5 class="mb-3">Fique por dentro!</h5>
 
-                    <div class="footer-assinar">
+                    <div class="footer-newsletter">
                         <form action="#" method="post">
                             <input type="email" name="email" class="form-control" placeholder="Email">
-                            <button class="btn botao-assinar mt-4" type="submit">Assinar</button>
+                            <button class="btn newsletter-button mt-4" type="submit">Assinar</button>
                         </form>
                     </div>
                 </div>
@@ -50,7 +50,7 @@
 
                     <h5>Localização</h5>
 
-                    <div class="localizacao-footer">
+                    <div class="footer-local">
                         <ul class="list-unstyled">
                             <li>
                                 <p> São Paulo, 01010-010</p>
@@ -106,4 +106,3 @@
     </div>
 
 </footer>
-

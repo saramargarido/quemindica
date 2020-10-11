@@ -93,7 +93,7 @@
 {{-- CONTEÚDO --}}
 @section('content')
 
-    <section class="conteudo-admin">
+    <section class="admin-content">
 
         <div class="card mb-4">
             <div class="card-body">
@@ -105,17 +105,17 @@
                     {{-- NOME TABELA --}}
                     <h2 class="text-center">Usuários</h2>
 
-                    {{-- PESQUISAR --}}
+                    {{-- search-admin-section --}}
                     <div class="row justify-content-center pb-4">
                         <div class="col-md-12">
 
-                            <div class="wrap secao-pesquisa-admin">
-                                <div class="pesquisar">
+                            <div class="wrap search-admin">
+                                <div class="search-admin-section">
                                     <form action="{{ url('admin') }}" method="GET" class="form-inline busca">
                                         @csrf
                                         <input value="{{ Request::get('busca') }}" name="busca" type="text"
-                                            class="input-pesquisar-admin" placeholder="Pesquisar">
-                                        <button type="submit" class="botao-pesquisar-admin">
+                                            class="search-input-admin" placeholder="search-admin-section">
+                                        <button type="submit" class="search-admin-btn">
                                             <i class="fa fa-search"></i>
                                         </button>
                                     </form>

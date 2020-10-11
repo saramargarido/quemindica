@@ -1,32 +1,33 @@
-.div1-quemsomos {
+.about-section {
     width: 100%;
     height: auto;
     background-color: #01a3cc;
     padding: 20px;
 }
 
-.div1-quemsomos h1 {
+.about-section h1 {
     margin-top: 100px;
     font-weight: bold;
     padding: 20px;
 }
 
-.div1-quemsomos h1,
+.about-section h1,
 p {
     color: #fff;
 }
 
-.imagem-time-sobre {
+.about-image-team {
     background-color: #01a3cc;
 }
 
+
 /* AVATARS */
 
-.secao-avatar {
+.avatar-section {
     background-color: #e5e5e5;
 }
 
-.secao-avatar h2 {
+.avatar-section h2 {
     padding-top: 20px;
 }
 
@@ -35,12 +36,12 @@ p {
     justify-content: center;
 }
 
-.avatar-time {
+.avatar-team {
     box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.avatar-time:hover {
+.avatar-team:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.251), 0 10px 10px #00000038;
 }
 

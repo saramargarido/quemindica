@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('title', 'Serviços')
-
+ 
 @section('style')
     @parent
     <link rel="stylesheet" href="{{ asset('/css/servico-page.css') }}">
@@ -23,7 +23,7 @@
             <h1>Serviço - {{ $service->servico }}</h1>
 
             {{-- SERVIÇO --}}
-            <div class="col-lg-6 servico-page-div">
+            <div class="col-lg-6 service-page-div">
                 <div class="card card-service">
 
                     <div class="card-service-page">

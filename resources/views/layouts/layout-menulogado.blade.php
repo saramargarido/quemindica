@@ -7,14 +7,14 @@
 {{-- MENU --}}
 <header>
     {{-- MENU --}}
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top menu-logado" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top menu-log" id="mainNav">
 
         {{-- TÍTULO --}}
         <a href="{{ route('user', Auth::user()->username) }}">
-            <img src="{{ asset('/imagens/logo/logo-icon.svg') }}" class="img-fluid logo-menu-logado">
+            <img src="{{ asset('/imagens/logo/logo-icon.svg') }}" class="img-fluid logo-menu-log">
         </a>
 
-        <a class="navbar-brand titulo-menu-logado" href="{{ route('user', Auth::user()->username) }}">QUEM
+        <a class="navbar-brand menu-log-title" href="{{ route('user', Auth::user()->username) }}">QUEM
             INDICA</a>
 
         {{-- SEÇÃO MENU NOTIFICAÇÕES, PESQUISAR E SAIR
@@ -29,11 +29,11 @@
 
         {{-- MENU NAV --}}
 
-        <div class="collapse navbar-collapse menu-nav-logado" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto componentes-menu-logado">
+        <div class="collapse navbar-collapse nav-log" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto menulog-components">
 
                 {{-- FOTO USUÁRIO E LINKS --}}
-                <div class="dropdown ml-auto foto-links-menu-logado">
+                <div class="dropdown ml-auto links-drop-menu">
 
                     {{-- MENU AUTH --}}
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -42,21 +42,21 @@
                             {{-- NOME DO USUÁRIO E FOTO USUÁRIO
                             --}}
 
-                            <a id="navbarDropdown" class="nav-link dropdown-toggle seta-drop-menulog" href="#"
+                            <a id="navbarDropdown" class="nav-link dropdown-toggle drop-arrow-menu" href="#"
                                 role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                 {{ Auth::user()->name }}
 
                                 @if (Auth::user()->photo == null)
                                     <img src="{{ asset('imagens/institucional/usuario.png') }}" alt="foto default"
-                                        class="rounded-circle avatar-menu-logado">
+                                        class="rounded-circle avatar-menu-log">
                                 @else
                                     <img src="{{ asset('uploads/photos/' . Auth::user()->photo) }}"
-                                        class="rounded-circle avatar-menu-logado">
+                                        class="rounded-circle avatar-menu-log">
                                 @endif
                             </a>
 
                             {{-- MENU DROPDOWN --}}
-                            <div class="dropdown-menu dropdown-menu-right rounded-0 menu-links-menulog"
+                            <div class="dropdown-menu dropdown-menu-right rounded-0 menulog-links"
                                 aria-labelledby="messages">
                                 <a class="dropdown-item" href="{{ route('user', Auth::user()->username) }}">Meu
                                     Perfil</a>
@@ -103,7 +103,7 @@
 
                         <a class="dropdown-item" href="#">
 
-                            <strong class="nome-user-not">Marcia está te seguindo</strong>
+                            <strong class="user-name">Marcia está te seguindo</strong>
 
                             <span class="small float-right text-muted">10:04</span>
 
@@ -112,7 +112,7 @@
                         <div class="dropdown-divider"></div>
 
 
-                        <a class="dropdown-item small ver-mais-menu" href="#">Ver Todas</a>
+                        <a class="dropdown-item small see-more-log" href="#">Ver Todas</a>
 
                     </div>
                 </li> --}}
@@ -125,7 +125,7 @@
                             <input class="form-control" type="text" placeholder="Pesquisar">
                             <span class="input-group-append">
 
-                                <button class="btn btn-pesquisa-menu" type="button">
+                                <button class="btn search-btn-log" type="button">
                                     <i class="fa fa-search"></i>
                                 </button>
 
@@ -136,7 +136,7 @@
 
 
                 {{-- BOTÃO SAIR --}}
-                <li class="nav-item botao-sair-menu">
+                <li class="nav-item logout-menu">
 
                     <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
                         <i class="fa fa-fw fa-sign-out"></i><span>Sair</span></a>
@@ -157,7 +157,7 @@
 
                 <div class="modal-header">
 
-                    <h5 class="modal-title modal-titulo-menu" id="exampleModalLabel">Desejar sair da conta?</h5>
+                    <h5 class="modal-title title-modal" id="exampleModalLabel">Desejar sair da conta?</h5>
 
                     <button class="close" type="button" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
@@ -165,19 +165,18 @@
 
                 </div>
 
-                <div class="modal-body texto-modal-sair">Selecione <b>sair</b> abaixo para sair da conta</div>
+                <div class="modal-body logout-text">Selecione <b>sair</b> abaixo para sair da conta</div>
 
                 <div class="modal-footer">
 
                     {{-- BOTÃO CANCELAR --}}
-                    <button class="btn btn-sm btn-botao-modal-menu-cancelar" type="button" data-dismiss="modal">Cancelar
+                    <button class="btn btn-sm logout-cancel" type="button" data-dismiss="modal">Cancelar
                     </button>
 
                     {{-- BOTÃO SAIR --}}
                     <a href="{{ route('logout') }}" onclick="event.preventDefault();
                                     document.getElementById('logout-form').submit();">
-                        <button class="btn btn-sm btn-botao-modal-menu-sair" type="button"
-                            data-dismiss="modal">{{ __('Logout') }}
+                        <button class="btn btn-sm logout-btn" type="button" data-dismiss="modal">{{ __('Logout') }}
                         </button>
                     </a>
 

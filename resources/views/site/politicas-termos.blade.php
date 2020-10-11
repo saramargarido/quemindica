@@ -21,7 +21,7 @@
     </div>
 
     {{-- ÁREA TEXTOS --}}
-    <section class="secao-termos">
+    <section class="terms-section">
         <div class="container">
 
             <div class="row">
@@ -29,7 +29,7 @@
                 {{-- MENU --}}
 
 
-                <div class="col-lg-3 col-md-4 col-sm-12 menu-termos">
+                <div class="col-lg-3 col-md-4 col-sm-12 terms-menu">
                     <div class="list-group">
 
                         <a href="#termos-uso" class="list-group-item text-center">
@@ -49,7 +49,7 @@
 
 
                 {{-- TEXTOS --}}
-                <div class="col-lg-9 col-md-8 col-sm-12 textos-termos-politicas">
+                <div class="col-lg-9 col-md-8 col-sm-12 terms-text">
 
                     {{-- TERMOS DE USO --}}
                     <div id="termos-uso">

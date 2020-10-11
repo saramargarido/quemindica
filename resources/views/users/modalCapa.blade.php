@@ -1,4 +1,3 @@
-
 {{-- MODAL FOTO CAPA--}}
 
 <div id="modalFotoCapa" class="modal fade" tabindex="-1" role="dialog">
@@ -28,8 +27,8 @@
                             {{-- FORMULÁRIO --}}
                             <div class="signup-form">
 
-                                <form action="#" method="POST"
-                                    enctype="multipart/form-data" class="register-form" id="register-form">
+                                <form action="#" method="POST" enctype="multipart/form-data" class="register-form"
+                                    id="register-form">
                                     @csrf
                                     <div class="row">
 

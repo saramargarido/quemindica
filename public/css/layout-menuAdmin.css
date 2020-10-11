@@ -5,27 +5,28 @@ header {
 
 /* LOGO E TÍTULO QUEM INDICA */
 
-
-.logo-nav img {
-    width: 40px;
+.admin-nav-logo img {
+    width: 50px;
 }
 
-.titulo-quemindica {
+.admin-qi-title {
     color: #FCDA73;
     font-weight: bold;
     text-transform: uppercase;
+    font-size: 1em;
 }
 
-.titulo-quemindica:hover,
-.navbar-dark,
-.navbar-brand {
-    color: #FCDA73 !important;
+.admin-qi-title:hover,
+.navbar-dark-admin:hover,
+.navbar-brand-admin:hover {
+    text-decoration: none;
+    color: #fff;
 }
 
 
 /* BOTÃO LOGIN E REGISTRAR */
 
-.btn-yellow {
+.btn-yellow-admin {
     background-color: #007592;
     color: #FCDA73;
     border: 1px solid #FCDA73;
@@ -38,45 +39,46 @@ header {
     text-transform: uppercase;
 }
 
-.btn-yellow:hover {
+.btn-yellow-admin:hover {
     background-color: #FCDA73;
     color: #007592;
 }
 
-.btn-yellow:focus {
+.btn-yellow-admin:focus {
     outline: none;
 }
 
+
 /* DROWPDOWN MENU */
 
-.avatar-menu-off {
+.avatar-menu-off-admin {
     width: 40px;
     height: 40px;
 }
 
-.avatar-menu-off:hover {
+.avatar-menu-off-admin:hover {
     border: 2px solid #FCDA73;
 }
 
-.drop-menuoff {
+.drop-menuoff-admin {
     color: #FCDA73;
 }
 
-.drop-menuoff:hover {
+.drop-menuoff-admin:hover {
     color: #fff;
 }
 
-.menu-links-menuoff {
+.menu-links-menuoff-admin {
     /* border: none; */
     background-color: #007592;
     border: 1px solid #FCDA73;
 }
 
-.menu-links-menuoff a {
+.menu-links-menuoff-admin a {
     color: #FCDA73;
 }
 
-.menu-links-menuoff a:hover {
+.menu-links-menuoff-admin a:hover {
     color: #007592;
     font-weight: bold;
     background-color: #FCDA73;

@@ -8,16 +8,16 @@
 <header class="container-fluid fixed-top nav-off">
 
     {{-- ÁRREA MENU --}}
-    <nav class="container-fluid mb-1 navbar navbar-expand-lg navbar-dark info-color">
+    <nav class="container-fluid mb-1 navbar navbar-expand-lg navbar-dark-admin info-color">
 
         {{-- LOGO E QUEM INDICA --}}
         @auth
             {{-- LOGO E QUEM INDICA --}}
-            <div class="nav-brand logo-nav">
-                <a class="navbar-brand" href="{{ route('user', Auth::user()->username) }}">
+            <div class="nav-brand admin-nav-logo">
+                <a class="navbar-brand-admin" href="{{ route('user', Auth::user()->username) }}">
                     <img src="{{ asset('/imagens/logo/logo-icon.svg') }}" alt="Logo Quem Indica" class="img-fluid">
                 </a>
-                <a class="navbar-brand titulo-quemindica" href="{{ route('admin') }}">
+                <a class="navbar-brand-admin admin-qi-title" href="{{ route('admin') }}">
                     Painel Admin
                 </a>
             </div>
@@ -26,11 +26,11 @@
         @guest
 
             {{-- LOGO E QUEM INDICA --}}
-            <div class="nav-brand logo-nav">
-                <a class="navbar-brand" href="{{ route('home') }}">
+            <div class="nav-brand admin-nav-logo">
+                <a class="navbar-brand-admin" href="{{ route('home') }}">
                     <img src="{{ asset('/imagens/logo/logo-icon.svg') }}" alt="Logo Quem Indica" class="img-fluid">
                 </a>
-                <a class="navbar-brand titulo-quemindica" href="{{ route('home') }}">
+                <a class="navbar-brand-admin admin-qi-title" href="{{ route('home') }}">
                     Quem Indica
                 </a>
             </div>
@@ -74,27 +74,27 @@
                     <li class="nav-item dropdown">
 
                         {{-- NOME DO USUÁRIO --}}
-                        <a id="navbarDropdown" class="nav-link dropdown-toggle drop-menuoff" href="#" role="button"
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle drop-menuoff-admin" href="#" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                             {{ Auth::user()->name }}
 
                             @if (Auth::user()->photo == null)
                                 <img src="{{ asset('imagens/institucional/usuario.png') }}" alt="foto default"
-                                    class="rounded-circle avatar-menu-off">
+                                    class="rounded-circle avatar-menu-off-admin">
                             @else
                                 <img src="{{ asset('uploads/photos/' . Auth::user()->photo) }}"
-                                    class="rounded-circle avatar-menu-off">
+                                    class="rounded-circle avatar-menu-off-admin">
                             @endif
                         </a>
 
                         {{-- BOTÃO SAIR --}}
-                        <div class="dropdown-menu dropdown-menu-right rounded-0 menu-links-menuoff"
+                        <div class="dropdown-menu dropdown-menu-right rounded-0 menu-links-menuoff-admin"
                             aria-labelledby="navbarDropdown">
 
                             {{-- BOTÃO SAIR --}}
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                 onclick="event.preventDefault();
-                                                                                                    document.getElementById('logout-form').submit();">
+                                                                                                                                    document.getElementById('logout-form').submit();">
                                 {{ __('Logout') }}
                             </a>
 

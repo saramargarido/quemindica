@@ -16,7 +16,7 @@
 
 
     {{-- SEÇÃO AMIGOS --}}
-    <div class="secao-amigos">
+    <div class="users-all">
 
         <h1 class="text-center">Usuários</h1>
 
@@ -28,12 +28,12 @@
 
 
                 <div class="col-lg-2 col-md-4 col-sm-12">
-                    <div class="card-amigo">
-                        <div class="card-front">
+                    <div class="user-info-card">
+                        <div class="user-front-card">
 
                             {{-- EXCLUIR OU BLOQUEAR --}}
 
-                            {{-- <div class="card-links">
+                            {{-- <div class="card-link">
 
                                 @if ($user->id != Auth::user()->id)
 
@@ -60,7 +60,7 @@
 
 
                             {{-- INFOS AMIGO --}}
-                            <div class="card-user">
+                            <div class="users-card">
 
                                 <div class="users-photo">
                                     {{-- FOTO AMIGO --}}

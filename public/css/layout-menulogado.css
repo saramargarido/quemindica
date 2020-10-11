@@ -1,12 +1,12 @@
-.menu-logado {
+.menu-log {
     background-color: #007592;
 }
 
-.logo-menu-logado {
+.logo-menu-log {
     width: 50px;
 }
 
-.titulo-menu-logado {
+.menu-log-title {
     margin-left: 20px;
     font-weight: bold;
 }
@@ -17,48 +17,48 @@
 
 /* DROWPDOWN MENU */
 
-.foto-links-menu-logado {
+.links-drop-menu {
     margin-right: 20px;
 }
 
-.foto-links-menu-logado a {
+.links-drop-menu a {
     text-decoration: none;
 }
 
-.avatar-menu-logado {
+.avatar-menu-log {
     width: 40px;
     height: 40px;
     margin-top: -10px;
 }
 
-.avatar-menu-logado:hover {
+.avatar-menu-log:hover {
     border: 2px solid #FCDA73;
 }
 
-.seta-drop-menulog {
+.drop-arrow-menu {
     color: #FCDA73;
 }
 
-.seta-drop-menulog:hover {
+.drop-arrow-menu:hover {
     color: #fff;
 }
 
-.menu-links-menulog {
+.menulog-links {
     border: none;
     background-color: #007592;
 }
 
-.menu-links-menulog a {
+.menulog-links a {
     color: #FCDA73;
 }
 
-.menu-links-menulog a:hover {
+.menulog-links a:hover {
     color: #007592;
     font-weight: bold;
     background-color: #FCDA73;
 }
 
-.menu-nav-logado {
+.nav-log {
     overflow: auto;
     max-height: 75vh;
 }
@@ -79,43 +79,43 @@
     color: #FCDA73;
 }
 
-.nome-user-not {
+.user-name {
     color: #007592;
 }
 
-.ver-mais-menu {
+.see-more-log {
     font-weight: bold;
     color: #FCDA73;
 }
 
-.ver-mais-menu:hover {
+.see-more-log:hover {
     font-weight: bold;
     color: #007592;
 }
 
+
 /* SEÇÃO PESQUISA */
 
-
-.btn-pesquisa-menu {
+.search-btn-log {
     background-color: #FCDA73;
     color: #fff;
     font-weight: bold;
 }
 
-.btn-pesquisa-menu:hover {
+.search-btn-log:hover {
     color: #007592;
 }
 
 
 /* SEÇÃO SAIR */
 
-.botao-sair-menu span {
+.logout-menu span {
     color: #fff;
     font-weight: bold;
     cursor: pointer;
 }
 
-.botao-sair-menu span:hover {
+.logout-menu span:hover {
     color: #FCDA73;
 }
 
@@ -126,47 +126,46 @@
 
 /* SEÇÃO MODAL CONFIRMAR SAIR */
 
-.modal-titulo-menu {
+.title-modal {
     color: #007592;
     font-weight: bold;
 }
 
-.texto-modal-sair {
+.logout-text {
     color: #8b8b8b;
 }
 
-
-.btn-botao-modal-menu-cancelar {
+.logout-cancel {
     background-color: #007592;
     font-weight: bold;
     color: #fff;
     margin-left: 20px;
 }
 
-.btn-botao-modal-menu-cancelar:hover {
+.logout-cancel:hover {
     background-color: #FCDA73;
     font-weight: bold;
     color: #007592;
 }
 
-.btn-botao-modal-menu-sair {
+.logout-btn {
     font-weight: bold;
     background-color: #838383;
     color: #fff;
 }
 
-.btn-botao-modal-menu-sair:hover {
+.logout-btn:hover {
     font-weight: bold;
     background-color: #007592;
     color: #fff;
 }
 
-.componentes-menu-logado>.nav-item.dropdown>.nav-link {
+.menulog-components>.nav-item.dropdown>.nav-link {
     position: relative;
     min-width: 45px;
 }
 
-.componentes-menu-logado>.nav-item.dropdown>.nav-link:after {
+.menulog-components>.nav-item.dropdown>.nav-link:after {
     float: right;
     width: auto;
     content: '\f105';
@@ -174,18 +173,18 @@
     font-family: 'FontAwesome';
 }
 
-.componentes-menu-logado>.nav-item.dropdown>.nav-link .indicator {
+.menulog-components>.nav-item.dropdown>.nav-link .indicator {
     position: absolute;
     top: 5px;
     left: 21px;
     font-size: 10px;
 }
 
-.componentes-menu-logado>.nav-item.dropdown.show>.nav-link:after {
+.menulog-components>.nav-item.dropdown.show>.nav-link:after {
     content: '\f107';
 }
 
-.componentes-menu-logado>.nav-item.dropdown .dropdown-menu>.dropdown-item>.dropdown-message {
+.menulog-components>.nav-item.dropdown .dropdown-menu>.dropdown-item>.dropdown-message {
     overflow: hidden;
     max-width: none;
     text-overflow: ellipsis;
@@ -194,49 +193,38 @@
 
 /* ÁREA RESPONSIVA */
 
-
 @media (max-width: 992px) {
-
-    .foto-links-menu-logado {
+    .links-drop-menu {
         display: none;
     }
-
-    .titulo-menu-logado {
+    .menu-log-title {
         font-size: 1em;
     }
-
     .titulo-not-mobile-menulog {
         color: #FCDA73;
         font-size: 0.9em;
     }
-
     .not-badge-mobile {
         background-color: #FCDA73;
     }
-
     .not-badge-mobile:hover {
         color: #007592;
     }
-
-    .menu-links-menulog {
+    .menulog-links {
         justify-content: center;
         background-color: #fff;
     }
-
-    .menu-links-menulog a {
+    .menulog-links a {
         color: #007592;
     }
 }
 
-
 @media (min-width: 992px) {
-
-    .menu-logado .navbar-collapse {
+    .menu-log .navbar-collapse {
         overflow: visible;
         max-height: none;
     }
-
-    .menu-logado .navbar-collapse .navbar-nav>.nav-item.dropdown .dropdown-menu>.dropdown-item>.dropdown-message {
+    .menu-log .navbar-collapse .navbar-nav>.nav-item.dropdown .dropdown-menu>.dropdown-item>.dropdown-message {
         max-width: 300px;
     }
 }

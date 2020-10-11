@@ -17,7 +17,7 @@
 
     {{-- DIV 1 --}}
 
-    <div class="div1-quemsomos">
+    <div class="about-section">
         <div class="row text-center">
             <div class="col-12">
 
@@ -39,7 +39,7 @@
 
 
     {{-- IMAGEM 1 --}}
-    <section class="imagem-time-sobre">
+    <section class="about-image-team">
         <div class="">
             <img src="{{ asset('/imagens/institucional/quemsomos/equipe-sobre.png') }}" alt="Time Quem Indica"
                 class="img-fluid">
@@ -124,7 +124,7 @@
     </div>
 
     {{-- ÁREA AVATAR TIME --}}
-    <div class="secao-avatar">
+    <div class="avatar-section">
         <div class="container">
             <div class="row text-center mb-3">
 
@@ -140,7 +140,7 @@
 
                 {{-- MARCIA --}}
                 <div class="col-xl-2 col-sm-6 mb-4 ">
-                    <div class="bg-white rounded py-5 px-4 avatar-time">
+                    <div class="bg-white rounded py-5 px-4 avatar-team">
 
                         <img src="{{ asset('/imagens/time/Marcia.png') }}" alt="Avatar Marcia" width="100"
                             class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
@@ -163,7 +163,7 @@
 
                 {{-- MILLENA --}}
                 <div class="col-xl-2 col-sm-6 mb-5">
-                    <div class="bg-white rounded py-5 px-4 avatar-time">
+                    <div class="bg-white rounded py-5 px-4 avatar-team">
 
                         <img src="{{ asset('/imagens/time/millena.png') }}" alt="Avatar Millena" width="100"
                             class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
@@ -185,7 +185,7 @@
 
                 {{-- SANDRA --}}
                 <div class="col-xl-2 col-sm-6 mb-5">
-                    <div class="bg-white rounded py-5 px-4 avatar-time">
+                    <div class="bg-white rounded py-5 px-4 avatar-team">
 
                         <img src="{{ asset('/imagens/time/Sandra.png') }}" alt="Avatar Sandra" width="100"
                             class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
@@ -208,7 +208,7 @@
 
                 {{-- SARA --}}
                 <div class="col-xl-2 col-sm-6 mb-5">
-                    <div class="bg-white rounded py-5 px-4 avatar-time">
+                    <div class="bg-white rounded py-5 px-4 avatar-team">
 
                         <img src="{{ asset('/imagens/time/Sara.png') }}" alt="Avatar Sara" width="100"
                             class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
@@ -230,7 +230,7 @@
 
                 {{-- SHYRLES --}}
                 <div class="col-xl-2 col-sm-6 mb-5">
-                    <div class="bg-white rounded py-5 px-4 avatar-time">
+                    <div class="bg-white rounded py-5 px-4 avatar-team">
                         <img src="{{ asset('/imagens/time/Shyrles.png') }}" alt="Avatar Shyrles" width="100"
                             class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
 

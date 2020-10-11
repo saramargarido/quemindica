@@ -15,7 +15,7 @@
 {{-- MODAL LOGIN --}}
 
 <div id="modalEntrar" class="modal fade" tabindex="-1" role="dialog">
-    <div class="modal-dialog ">
+    <div class="modal-dialog">
         <div class="modal-content section-modal-login text-center">
 
             {{-- BOTÃO FECHAR --}}
@@ -196,8 +196,8 @@
 
                                     {{-- IMAGEM --}}
                                     <div class="banner-register">
-                                        <img src="{{ asset('/imagens/institucional/register.svg') }}"
-                                            class="img-fluid" alt="Banner Suporte">
+                                        <img src="{{ asset('/imagens/institucional/register.svg') }}" class="img-fluid"
+                                            alt="Banner Suporte">
                                     </div>
 
                                     <div class="row">
@@ -377,14 +377,14 @@
             {{-- BOTÃO FECHAR --}}
 
             <div class="fechar">
-                <button type="button" class="btn-fechar-suporte" data-dismiss="modal">
+                <button type="button" class="close-btn-support" data-dismiss="modal">
                     <i class="fa fa-times" aria-hidden="true"></i>
                     <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                 </button>
             </div>
 
             {{-- TÍTULO MODAL SUPORTE --}}
-            <h4 class="modal-title-suporte">Suporte</h4>
+            <h4 class="support-modal-title">Suporte</h4>
 
             {{-- CORPO MODAL SUPORTE --}}
             <div class="modal-body">
@@ -409,35 +409,35 @@
 
 
                                         {{-- NOME --}}
-                                        <div class="wrap-area-input-modal-suporte-modal-suporte">
-                                            <input class="area-input-modal-suporte" type="text" name="name"
+                                        <div class="wrap-modal-input-area-support-modal-suporte">
+                                            <input class="modal-input-area-support" type="text" name="name"
                                                 placeholder="Nome">
-                                            <span class="focus-area-input-modal-suporte"></span>
-                                            <span class="icone-input-modal-suporte">
+                                            <span class="focus-modal-input-area-support"></span>
+                                            <span class="modal-support-icon">
                                                 <i class="fa fa-user" aria-hidden="true"></i>
                                             </span>
                                         </div>
 
                                         {{-- EMAIL --}}
-                                        <div class="wrap-area-input-modal-suporte-modal-suporte">
-                                            <input class="area-input-modal-suporte" type="email" name="email"
+                                        <div class="wrap-modal-input-area-support-modal-suporte">
+                                            <input class="modal-input-area-support" type="email" name="email"
                                                 placeholder="Email">
-                                            <span class="focus-area-input-modal-suporte"></span>
-                                            <span class="icone-input-modal-suporte">
+                                            <span class="focus-modal-input-area-support"></span>
+                                            <span class="modal-support-icon">
                                                 <i class="fa fa-envelope" aria-hidden="true"></i>
                                             </span>
                                         </div>
 
                                         {{-- MENSAGEM --}}
-                                        <div class="wrap-area-input-modal-suporte-modal-suporte">
-                                            <textarea class="area-input-modal-suporte" name="message"
+                                        <div class="wrap-modal-input-area-support-modal-suporte">
+                                            <textarea class="modal-input-area-support" name="message"
                                                 placeholder="Mensagem"></textarea>
-                                            <span class="focus-area-input-modal-suporte"></span>
+                                            <span class="focus-modal-input-area-support"></span>
                                         </div>
 
                                         {{-- BOTÃO --}}
-                                        <div class="container-botao-modal-suporte">
-                                            <button class="btn-formulario-modal-suporte">
+                                        <div class="support-container-btn">
+                                            <button class="form-support-btn">
                                                 Enviar
                                             </button>
                                         </div>

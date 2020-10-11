@@ -15,27 +15,27 @@
 @section('content')
 
 
-    <div class="secao-servicos-geral">
+    <div class="section-services">
         <div class="row">
 
 
             {{-- SEÇÃO FILTROS --}}
-            <div class="col-lg-3 col-md-4 col-sm-12 side-filtros">
+            <div class="col-lg-3 col-md-4 col-sm-12 side-filters">
 
-                <div class="card-sticky">
+                <div class="service-card-sticky">
 
                     {{-- ÁREA PESQUISA --}}
-                    <div class="row pesquisa-servico">
+                    <div class="row service-search">
                         <div class="container-fluid">
 
                             <div class="input-group">
 
-                                <input type="text" class="input-pesquisa-servico form-control"
+                                <input type="text" class="input-service-search form-control"
                                     placeholder="Pesquisar serviço">
 
                                 {{-- BOTÃO PESQUISAR SERVIÇO
                                 --}}
-                                <button class="btn botao-pesquisar-servico" type="button">
+                                <button class="btn service-search-btn" type="button">
                                     <i class="fa fa-search" aria-hidden="true"></i>
                                 </button>
 
@@ -44,24 +44,24 @@
                     </div>
 
                     {{-- ÁREA FILTRO POR PREÇO --}}
-                    <div class="card pesquisa-preco">
+                    <div class="service-card price-range-service">
 
-                        <div class="card-header">
+                        <div class="service-card-header">
                             <h6 class="title text-center">Faixa de Preço</h6>
                         </div>
 
-                        <div class="card-body">
+                        <div class="service-card-body">
                             <div class="form-row">
 
                                 <div class="form-group col-md-6">
                                     <label>Min</label>
-                                    <input type="number" class="form-control input-faixa-preco-servico" id="min-prec"
+                                    <input type="number" class="form-control price-range-service-input" id="min-prec"
                                         placeholder="R$ 0,00">
                                 </div>
 
                                 <div class="form-group col-md-6 text-right">
                                     <label>Max</label>
-                                    <input type="number" class="form-control input-faixa-preco-servico" id="max-prec"
+                                    <input type="number" class="form-control price-range-service-input" id="max-prec"
                                         placeholder="R$ 1.000,00">
                                 </div>
 
@@ -71,13 +71,13 @@
 
                     {{-- ÁREA FILTRO POR CATEGORIA DO SERVIÇO
                     --}}
-                    <div class="card pesquisa-categoria">
+                    <div class="service-card serach-type">
 
-                        <div class="card-header">
+                        <div class="service-card-header">
                             <h6 class="title text-center">Categoria</h6>
                         </div>
 
-                        <div class="card-body">
+                        <div class="service-card-body">
                             <form>
 
                                 <label class="form-check">
@@ -111,25 +111,25 @@
 
 
             {{-- SEÇÃO SERVIÇOS --}}
-            <div class="col-lg-9 col-md-8 col-sm-12 secao-servicos">
+            <div class="col-lg-9 col-md-8 col-sm-12 all-services">
 
                 <h1 class="text-center">Serviços</h1>
 
-                {{-- CARDS SERVIÇOS --}}
+                {{-- service-cardS SERVIÇOS --}}
                 <div class="row">
 
                     {{-- SERVIÇO 1 --}}
                     @foreach ($postsUser as $post)
                         <div class="col-sm-6 col-md-6 col-lg-3">
-                            <div class="card">
+                            <div class="service-card">
 
-                                <div class="card-servicos">
+                                <div class="services-cards-all">
                                     {{-- IMAGEM SERVIÇO
                                     --}}
 
 
                                     @if ($post->photo == null)
-                                        <img src="{{ asset('/imagens/servicos/servico-3.jpg') }}" alt="Card Serviço"
+                                        <img src="{{ asset('/imagens/servicos/servico-3.jpg') }}" alt="service-card Serviço"
                                             class="img-fluid">
                                     @else
                                         <img src="{{ asset('uploads/services/' . $post->photo) }}" alt="Foto Serviço"
@@ -140,7 +140,7 @@
 
                                     {{-- BOTÃO
                                     --}}
-                                    <div class="card-img-overlay">
+                                    <div class="service-card-img-overlay">
                                         <a href="{{ route('servico.show', $post->id) }}">
                                             <button class="btn Auth::user()->">Contratar
                                                 <i class="fa fa-check-square-o"></i>
@@ -148,22 +148,22 @@
                                         </a>
                                     </div>
 
-                                    <div class="card-body">
+                                    <div class="service-card-body">
 
                                         {{-- TÍTULO SERVIÇO
                                         --}}
 
                                         <div class="text-service">
-                                            <span class="service-card-title">Serviço: </span>
-                                            <span class="service-text-card"> {{ $post->servico }}</span>
+                                            <span class="service-title">Serviço: </span>
+                                            <span class="service-text"> {{ $post->servico }}</span>
                                         </div>
                                         <div class="text-service">
-                                            <span class="service-card-title">Prestador: </span>
-                                            <span class="service-text-card"> {{ $post->nome_prestador }}</span>
+                                            <span class="service-title">Prestador: </span>
+                                            <span class="service-text"> {{ $post->nome_prestador }}</span>
                                         </div>
                                         <div class="text-service">
-                                            <span class="service-card-title">Local: </span>
-                                            <span class="service-text-card"> {{ $post->local }}</span>
+                                            <span class="service-title">Local: </span>
+                                            <span class="service-text"> {{ $post->local }}</span>
                                         </div>
                                     </div>
                                 </div>

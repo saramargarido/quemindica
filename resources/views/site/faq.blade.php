@@ -13,7 +13,7 @@
 
 @section('content')
 
-    <div class="secao-faq">
+    <div class="faq-section">
 
         <div class="container">
 

@@ -5,18 +5,17 @@ header {
 
 /* LOGO E TÍTULO QUEM INDICA */
 
-
 .logo-nav img {
     width: 60px;
 }
 
-.titulo-quemindica {
+.qi-title {
     color: #FCDA73;
     font-weight: bold;
     text-transform: uppercase;
 }
 
-.titulo-quemindica:hover,
+.qi-title:hover,
 .navbar-dark,
 .navbar-brand {
     color: #FCDA73 !important;
@@ -26,18 +25,16 @@ header {
 /* BOTÃO SUPORTE + LOGIN + REGISTRAR */
 
 
-
 /* BOTÃO SUPORTE */
 
-.botao-suporte {
+.support-btn {
     position: relative;
     cursor: pointer;
     margin: auto;
     display: block;
-
 }
 
-.botao-suporte img {
+.support-btn img {
     height: 36px;
     padding: 5px;
     border-radius: 5px;
@@ -50,10 +47,10 @@ header {
     background-color: #FCDA73;
 }
 
-
 .btn-suporte:focus {
     outline: none;
 }
+
 
 /* BOTÃO LOGIN E REGISTRAR */
 
@@ -79,6 +76,7 @@ header {
     outline: none;
 }
 
+
 /* DROWPDOWN MENU */
 
 .avatar-menu-off {
@@ -98,17 +96,17 @@ header {
     color: #fff;
 }
 
-.menu-links-menuoff {
+.links-menuoff {
     /* border: none; */
     background-color: #007592;
     border: 1px solid #FCDA73;
 }
 
-.menu-links-menuoff a {
+.links-menuoff a {
     color: #FCDA73;
 }
 
-.menu-links-menuoff a:hover {
+.links-menuoff a:hover {
     color: #007592;
     font-weight: bold;
     background-color: #FCDA73;

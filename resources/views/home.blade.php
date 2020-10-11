@@ -14,7 +14,7 @@
 @section('content')
 
     {{-- ÁREA SEÇÃO BANNER --}}
-    <section class="secao-banner">
+    <section class="home-banner-section">
         <div class="container">
 
             {{-- BANNER --}}
@@ -23,7 +23,7 @@
                 alt="Banner Principal">
 
             <div class="row">
-                <div class="secao-banner-texto box">
+                <div class="home-banner-section-texto box">
 
                     {{-- TÍTULO --}}
                     <h4 class="text-center white mb-3">Procura um serviço?</h4>
@@ -45,7 +45,7 @@
 
     {{-- ÁREA SEÇÃO CADASTRO --}}
 
-    <section class="secao-cadastro">
+    <section class="home-register-section">
         <form action="{{ route('register') }}" method="POST">
             @csrf
             <div class="form-row justify-content-center">
@@ -60,7 +60,7 @@
                 <div class="col-auto">
                     <label class="sr-only" for="inlineFormInputGroup">Email</label>
                     <div class="input-group mb-2">
-                        <div class="input-group-prepend arroba">
+                        <div class="input-group-prepend atsign-input">
                             <div class="input-group-text">#</div>
                         </div>
                         <input type="codigo" name="codigo" class="form-control" id="codigo"
@@ -70,7 +70,7 @@
 
                 {{-- BOTÃO CADASTRO --}}
                 <div class="col-auto">
-                    <button type="submit" class="btn btn-cadastro mb-2">Cadastrar</button>
+                    <button type="submit" class="btn home-register-btn mb-2">Cadastrar</button>
                 </div>
             </div>
         </form>
@@ -78,7 +78,7 @@
 
 
     {{-- ÁREA SEÇÃO SOBRE --}}
-    <section class="secao-sobre">
+    <section class="home-about-section">
 
         <div class="container ">
             <div class="row align-items-center">
@@ -101,7 +101,7 @@
 
     {{-- ÁREA SEÇÃO TIME --}}
 
-    <section class="secao-time">
+    <section class="home-team-section">
         <div class="container">
             <div class="row align-items-center">
 

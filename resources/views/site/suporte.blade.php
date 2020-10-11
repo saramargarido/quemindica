@@ -1,5 +1,10 @@
 @extends('layouts.layout')
 
+@section('style')
+    @parent
+    <link rel="stylesheet" href="{{ asset('/css/support.css') }}">
+@endsection
+
 @section('title', 'Suporte')
 
 @section('header')
@@ -9,9 +14,9 @@
 @section('content')
 
     {{-- FORMULÁRIO SUPORTE --}}
-    <section class="secao-formulario text-center">
+    <section class="form-section-page text-center">
 
-        <div class="card d-flex justify-content-center div-formulario">
+        <div class="card d-flex justify-content-center form-div-page">
             <div class="row">
 
                 {{-- BANNER --}}
@@ -20,7 +25,7 @@
 
                 {{-- TÍTULO --}}
                 <div class="col-lg-6">
-                    <h4 class="titulo">Suporte</h4>
+                    <h4 class="modal-title">Suporte</h4>
 
                     {{-- FORMULÁRIO --}}
                     <form action="{{ route('suporte') }}" method="POST" class="container">
@@ -29,9 +34,9 @@
                         {{-- NOME --}}
                         <div class="row">
                             <div class="form-group col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                <input class="area-input" type="text" name="name" placeholder="Nome">
-                                <span class="focus-area-input"></span>
-                                <span class="icone-input">
+                                <input class="modal-support-input" type="text" name="name" placeholder="Nome">
+                                <span class="focus-modal-support-input"></span>
+                                <span class="support-icon-input">
                                     <i class="fa fa-user" aria-hidden="true"></i>
                                 </span>
                             </div>
@@ -40,9 +45,9 @@
                         {{-- EMAIL --}}
                         <div class="row">
                             <div class="form-group col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                <input class="area-input" type="text" name="email" placeholder="Email">
-                                <span class="focus-area-input"></span>
-                                <span class="icone-input">
+                                <input class="modal-support-input" type="text" name="email" placeholder="Email">
+                                <span class="focus-modal-support-input"></span>
+                                <span class="support-icon-input">
                                     <i class="fa fa-envelope" aria-hidden="true"></i>
                                 </span>
                             </div>
@@ -51,9 +56,9 @@
                         {{-- MENSAGEM --}}
                         <div class="row">
                             <div class="form-group col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                                <div class="wrap-area-input">
-                                    <textarea class="area-input" name="message" placeholder="Mensagem"></textarea>
-                                    <span class="focus-area-input"></span>
+                                <div class="wrap-modal-support-input">
+                                    <textarea class="modal-support-input" name="message" placeholder="Mensagem"></textarea>
+                                    <span class="focus-modal-support-input"></span>
                                 </div>
                             </div>
                         </div>
@@ -62,7 +67,7 @@
                         <div class="row">
 
                             <div class="form-group col-lg-12">
-                                <button type="submit" class="btn btn-formulario-suporte">
+                                <button type="submit" class="btn form-input-btn">
                                     Enivar
                                 </button>
                             </div>

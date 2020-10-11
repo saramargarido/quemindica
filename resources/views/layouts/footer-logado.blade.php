@@ -1,4 +1,4 @@
-<footer class="footer-logado">
+<footer class="footer-log">
 
     {{-- COPYRIGHT --}}
     <div class="footer-copyright text-center">

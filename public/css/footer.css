@@ -8,11 +8,11 @@ footer {
     display: inline-block;
 }
 
-.secao-footer {
+.footer-section {
     padding: 40px;
 }
 
-.secao-footer h5 {
+.footer-section h5 {
     color: #fff;
     font-weight: bold;
     padding: 10px;
@@ -21,11 +21,11 @@ footer {
 
 /* MENU FOOTER */
 
-.menu-footer {
+.footer-menu {
     padding: 10px;
 }
 
-.menu-footer a {
+.footer-menu a {
     color: #fff;
     text-decoration: none;
 }
@@ -33,19 +33,18 @@ footer {
 
 /* NEWSLETTER */
 
-.footer-assinar {
+.footer-newsletter {
     padding: 10px;
 }
 
-
-.botao-assinar {
+.newsletter-button {
     color: #e5e5e5;
     font-weight: bold;
     background-color: #007592;
     border-color: #007592;
 }
 
-.botao-assinar:hover {
+.newsletter-button:hover {
     color: #007592;
     background-color: #FCDA73;
     border-color: #007592;
@@ -54,11 +53,10 @@ footer {
 
 /* LOCALIZAÇÃO */
 
-.localizacao-footer {
+.footer-local {
     padding: 10px;
     color: #fff;
 }
-
 
 
 /* MIDIAS SOCIAIS */
@@ -86,12 +84,13 @@ footer {
 }
 
 
-
 /* === FOOTER LOGADO === */
 
-.footer-logado {
+.footer-log {
     bottom: 0;
-    position: -webkit-sticky;
-    position: sticky;
+    /* position: -webkit-sticky; */
+    /* position: sticky; */
     z-index: 999;
+    position: fixed;
+    clear: both;
 }

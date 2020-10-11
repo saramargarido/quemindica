@@ -38,7 +38,7 @@
 
 
     {{-- PAINEL ADMIN --}}
-    <div class="secao-admin-painel">
+    <div class="admin-section">
         <div class="container-fluid">
 
             {{-- MENU --}}

@@ -54,7 +54,7 @@
                                         value="{{ $user->name }}">
 
                                     <span class="focus-area-input-edit"></span>
-                                    <span class="edit-icone-input">
+                                    <span class="edit-icon">
                                         <i class="fa fa-user" aria-hidden="true"></i>
                                     </span>
                                 </div>
@@ -72,7 +72,7 @@
                                         disabled="disabled">
 
                                     <span class=" focus-area-input-edit"></span>
-                                    <span class="edit-icone-input">
+                                    <span class="edit-icon">
                                         <i class="fa fa-user" aria-hidden="true"></i>
                                     </span>
                                 </div>
@@ -83,7 +83,7 @@
                                         value="{{ old('email') }}" placeholder="{{ $user->email }}" disabled="disabled">
 
                                     <span class="focus-area-input-edit"></span>
-                                    <span class="edit-icone-input">
+                                    <span class="edit-icon">
                                         <i class="fa fa-envelope" aria-hidden="true"></i>
                                     </span>
                                 </div>
@@ -99,7 +99,7 @@
                                         value="{{ $user->phone }}" disabled="disabled">
 
                                     <span class="focus-area-input-edit"></span>
-                                    <span class="edit-icone-input">
+                                    <span class="edit-icon">
                                         <i class="fa fa-phone" aria-hidden="true"></i>
                                     </span>
                                 </div>
@@ -110,7 +110,7 @@
                                         value="{{ $user->cpf }}" placeholder="CPF">
 
                                     <span class="focus-area-input-edit"></span>
-                                    <span class="edit-icone-input">
+                                    <span class="edit-icon">
                                         <i class="fa fa-id-badge" aria-hidden="true"></i>
                                     </span>
                                 </div>
@@ -126,7 +126,7 @@
                                         value="{{ $user->zip_code }}" placeholder="CEP">
 
                                     <span class="focus-area-input-edit"></span>
-                                    <span class="edit-icone-input">
+                                    <span class="edit-icon">
                                         <i class="fas fa-search-location" aria-hidden="true"></i>
                                     </span>
                                 </div>
@@ -143,7 +143,7 @@
 
 
                                     <span class="focus-area-input-edit"></span>
-                                    <span class="edit-icone-input">
+                                    <span class="edit-icon">
                                         <i class="fa fa-road" aria-hidden="true"></i>
                                     </span>
                                 </div>
@@ -160,7 +160,7 @@
 
 
                                     <span class="focus-area-input-edit"></span>
-                                    <span class="edit-icone-input">
+                                    <span class="edit-icon">
                                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                                     </span>
                                 </div>
@@ -176,7 +176,7 @@
                                         value="{{ $user->city }}" placeholder="Cidade">
 
                                     <span class="focus-area-input-edit"></span>
-                                    <span class="edit-icone-input">
+                                    <span class="edit-icon">
                                         <i class="fas fa-city" aria-hidden="true"></i>
                                     </span>
                                 </div>
@@ -188,7 +188,7 @@
 
 
                                     <span class="focus-area-input-edit"></span>
-                                    <span class="edit-icone-input">
+                                    <span class="edit-icon">
                                         <i class="fas fa-city" aria-hidden="true"></i>
                                     </span>
                                 </div>
@@ -203,7 +203,7 @@
                                         value="{{ $user->born_date }}">
 
                                     <span class="focus-area-input-edit"></span>
-                                    <span class="edit-icone-input">
+                                    <span class="edit-icon">
                                         <i class="fa fa-birthday-cake" aria-hidden="true"></i>
                                     </span>
                                 </div>
@@ -220,7 +220,7 @@
 
 
                                     <span class="focus-area-input-edit"></span>
-                                    <span class="edit-icone-input">
+                                    <span class="edit-icon">
                                         <i class="fa fa-id-card-o" aria-hidden="true"></i>
                                     </span>
                                 </div>
