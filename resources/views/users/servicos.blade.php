@@ -29,7 +29,9 @@
 
                             <form action="{{ route('servicos') }}" method="GET" class="form-inline search-service-form">
                                 @csrf
-                                <input type="text" class="input-service-search" placeholder="Pesquisar serviço">
+
+                                <input value="{{ Request::get('busca') }}" name="busca" type="text"
+                                    class="input-service-search" placeholder="Pesquisar Serviço">
 
                                 <button type="submit" class="btn service-search-btn">
                                     <i class="fa fa-search"></i>
@@ -39,43 +41,45 @@
                         </div>
                     </div>
 
-                    {{-- ÁREA FILTRO POR PREÇO --}}
-                    <div class="service-card price-range-service">
+                    <form action="{{ route('servicos') }}" method="GET">
+                        @csrf
 
-                        <div class="service-card-header">
-                            <h6 class="title text-center">Faixa de Preço</h6>
-                        </div>
+                        {{-- ÁREA FILTRO POR PREÇO --}}
+                        <div class="service-card price-range-service">
 
-                        <div class="service-price">
-                            <div class="form-row">
+                            <div class="service-card-header">
+                                <h6 class="title text-center">Faixa de Preço</h6>
+                            </div>
 
-                                <div class="form-group col-md-6">
-                                    <label>Min</label>
-                                    <input type="number" class="form-control price-range-service-input" id="min-prec"
-                                        placeholder="R$ 0,00">
+                            <div class="service-price">
+                                <div class="form-row">
+
+                                    <div class="form-group col-md-6">
+                                        <label>Min</label>
+                                        <input type="number" class="form-control price-range-service-input" id="min-prec"
+                                            placeholder="R$ 0,00">
+                                    </div>
+
+                                    <div class="form-group col-md-6 text-right">
+                                        <label>Max</label>
+                                        <input type="number" class="form-control price-range-service-input" id="max-prec"
+                                            placeholder="R$ 1.000,00">
+                                    </div>
+
                                 </div>
-
-                                <div class="form-group col-md-6 text-right">
-                                    <label>Max</label>
-                                    <input type="number" class="form-control price-range-service-input" id="max-prec"
-                                        placeholder="R$ 1.000,00">
-                                </div>
-
                             </div>
                         </div>
-                    </div>
 
-                    {{-- ÁREA FILTRO POR CATEGORIA DO SERVIÇO
-                    --}}
-                    <div class="service-card service-category">
+                        {{-- ÁREA FILTRO POR CATEGORIA DO SERVIÇO
+                        --}}
+                        <div class="service-card service-category">
 
-                        <div class="service-card-header">
-                            <h6 class="title text-center">Segmento</h6>
-                        </div>
+                            <div class="service-card-header">
+                                <h6 class="title text-center">Segmento</h6>
+                            </div>
 
-                        <div class="service-card-body">
-                            <form action="{{ route('servicos') }}" method="GET">
-                                @csrf
+                            <div class="service-card-body">
+
                                 @foreach ($segments as $segment)
 
                                     <div class="form-check my-2">
@@ -90,17 +94,18 @@
 
                                 @endforeach
 
-                                <button type="submit" class="btn btn-outline-light py-2">Filtrar</button>
-
-                                {{-- LIMPAR FILTRO --}}
-                                <button type="submit" class="btn btn-outline-light py-2">
-                                    <a href="{{ route('servicos') }}">Limpar Filtro</a>
-                                </button>
-
-                            </form>
+                            </div>
                         </div>
 
-                    </div>
+
+                        <button type="submit" class="btn btn-outline-light py-2">Filtrar</button>
+
+                        {{-- LIMPAR FILTRO --}}
+                        <button type="submit" class="btn btn-outline-light py-2">
+                            <a href="{{ route('servicos') }}">Limpar Filtro</a>
+                        </button>
+
+                    </form>
 
                 </div>
 
@@ -172,7 +177,7 @@
                         </div>
                     @empty
                         <div class="empresa">
-                            <h2>Segmento não encontrado</h2>
+                            <h2>Não encontrado!</h2>
                         </div>
                     @endforelse
 

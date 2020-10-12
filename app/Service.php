@@ -39,9 +39,6 @@ class Service extends Model
 
 
 
-
-
-
     // FILTRO SEGMENTOS
     
     public static function filtros($filtros)
