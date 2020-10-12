@@ -27,18 +27,15 @@
                     <div class="row service-search">
                         <div class="container-fluid">
 
-                            <div class="input-group">
+                            <form action="{{ route('servicos') }}" method="GET" class="form-inline search-service-form">
+                                @csrf
+                                <input type="text" class="input-service-search" placeholder="Pesquisar serviço">
 
-                                <input type="text" class="input-service-search form-control"
-                                    placeholder="Pesquisar serviço">
-
-                                {{-- BOTÃO PESQUISAR SERVIÇO
-                                --}}
-                                <button class="btn service-search-btn" type="button">
-                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                <button type="submit" class="btn service-search-btn">
+                                    <i class="fa fa-search"></i>
                                 </button>
+                            </form>
 
-                            </div>
                         </div>
                     </div>
 
@@ -77,16 +74,19 @@
                         </div>
 
                         <div class="service-card-body">
-                            <form>
+                            <form action="{{ route('servicos') }}" class="form-culture" method="GET">
+                                @csrf
 
-                                <label class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="decoracao">
-                                    <span class="form-check-label">
-                                        Decoração
-                                    </span>
-                                </label>
+                                @foreach ($services as $service)
 
+                                    <label class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="decoracao">
+                                        <span class="form-check-label">
+                                            {{ $service->segment->tipo }}
+                                        </span>
+                                    </label>
 
+                                @endforeach
 
                             </form>
                         </div>
@@ -106,7 +106,7 @@
                 <div class="row">
 
                     {{-- SERVIÇO 1 --}}
-                    @foreach ($postsUser as $post)
+                    @foreach ($services as $service)
                         <div class="col-sm-6 col-md-6 col-lg-3">
                             <div class="service-card">
 
@@ -115,11 +115,11 @@
                                     --}}
 
 
-                                    @if ($post->photo == null)
+                                    @if ($service->photo == null)
                                         <img src="{{ asset('/imagens/servicos/servico-3.jpg') }}" alt="service-card Serviço"
                                             class="photo-service img-fluid">
                                     @else
-                                        <img src="{{ asset('uploads/services/' . $post->photo) }}" alt="Foto Serviço"
+                                        <img src="{{ asset('uploads/services/' . $service->photo) }}" alt="Foto Serviço"
                                             class="photo-service img-fluid">
                                     @endif
 
@@ -128,7 +128,7 @@
                                     {{-- BOTÃO
                                     --}}
                                     <div class="service-hire">
-                                        <a href="{{ route('servico.show', $post->id) }}">
+                                        <a href="{{ route('servico.show', $service->id) }}">
                                             <button class="btn btn-hire-service">Contratar
                                                 <i class="fa fa-check-square-o"></i>
                                             </button>
@@ -142,15 +142,15 @@
 
                                         <div class="text-service">
                                             <span class="service-title">Serviço: </span>
-                                            <span class="service-text"> {{ $post->servico }}</span>
+                                            <span class="service-text"> {{ $service->servico }}</span>
                                         </div>
                                         <div class="text-service">
                                             <span class="service-title">Prestador: </span>
-                                            <span class="service-text"> {{ $post->nome_prestador }}</span>
+                                            <span class="service-text"> {{ $service->nome_prestador }}</span>
                                         </div>
                                         <div class="text-service">
                                             <span class="service-title">Local: </span>
-                                            <span class="service-text"> {{ $post->local }}</span>
+                                            <span class="service-text"> {{ $service->local }}</span>
                                         </div>
                                     </div>
                                 </div>

@@ -6,7 +6,7 @@ use App\User;
 use App\Culture;
 use App\Service;
 use App\Product;
-use App\Post;
+use App\Post; 
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Auth;
 class AdminController extends Controller
 {
 
-    public function users()
+    public function users() 
     {
         $cultures = Culture::all();
         $services = Service::all();

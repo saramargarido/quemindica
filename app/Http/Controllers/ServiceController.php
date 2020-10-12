@@ -27,9 +27,13 @@ class ServiceController extends Controller
     {
         $user = Auth::user();
 
-        $postsUser = Service::all();
+        // $postsUser = Service::all();
 
-        return view('users.servicos', compact('user', 'postsUser'));
+        $busca = request('busca');
+
+        $services = Service::where('servico', 'LIKE', '%' . $busca . '%')->get();
+
+        return view('users.servicos', compact('user', 'services'));
     }
 
 
