@@ -176,9 +176,17 @@
                             </div>
                         </div>
                     @empty
-                        <div class="empresa">
-                            <h2>Não encontrado!</h2>
+
+                        <div class="container h-100 notfound-service">
+                            <div class="row align-items-center h-100">
+                                <div class="col-6 mx-auto">
+                                    <div class="text-center">
+                                        Não encontrado!
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
                     @endforelse
 
                 </div>
