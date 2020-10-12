@@ -2,6 +2,10 @@
 
 @section('title', 'Serviços')
 
+    @prepend('scripts')
+    <script defer src="{{ asset('/js/clearFilter.js') }}"></script>
+    @endprepend
+
 @section('style')
     @parent
     <link rel="stylesheet" href="{{ asset('/css/servicos.css') }}">
@@ -27,7 +31,8 @@
                     <div class="row service-search">
                         <div class="container-fluid">
 
-                            <form action="{{ route('servicos') }}" method="GET" class="form-inline search-service-form">
+                            <form action="{{ route('servicos') }}" method="GET" class="form-inline search-service-form"
+                                id="serviceForm">
                                 @csrf
 
                                 <input value="{{ Request::get('busca') }}" name="busca" type="text"
@@ -41,7 +46,8 @@
                         </div>
                     </div>
 
-                    <form action="{{ route('servicos') }}" method="GET">
+                    {{-- ÁREA FILTROS --}}
+                    <form action="{{ route('servicos') }}" method="GET" id="serviceForm">
                         @csrf
 
                         {{-- ÁREA FILTRO POR PREÇO --}}
@@ -182,6 +188,10 @@
                                 <div class="col-6 mx-auto">
                                     <div class="text-center">
                                         Não encontrado!
+                                        <br>
+
+                                        <button onclick="goBack()" class="btn btn-outline-secondary">Voltar</button>
+
                                     </div>
                                 </div>
                             </div>
