@@ -74,22 +74,32 @@
                         </div>
 
                         <div class="service-card-body">
-                            <form action="{{ route('servicos') }}" class="form-culture" method="GET">
+                            <form action="{{ route('servicos') }}" method="GET">
                                 @csrf
+                                @foreach ($segments as $segment)
 
-                                @foreach ($services as $service)
+                                    <div class="form-check my-2">
 
-                                    <label class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="decoracao">
-                                        <span class="form-check-label">
-                                            {{ $service->segment->tipo }}
-                                        </span>
-                                    </label>
+                                        <input class="form-check-input" type="checkbox" name="filtros[{{ $segment->tipo }}]"
+                                            value="{{ $segment->id }}" @isset(request()->get('filtros')[$segment->tipo])
+                                        checked @endisset>
+                                        <label class="form-check-label"
+                                            for="{{ $segment->id }}">{{ $segment->tipo }}</label>
+
+                                    </div>
 
                                 @endforeach
 
+                                <button type="submit" class="btn btn-outline-light py-2">Filtrar</button>
+
+                                {{-- LIMPAR FILTRO --}}
+                                <button type="submit" class="btn btn-outline-light py-2">
+                                    <a href="{{ route('servicos') }}">Limpar Filtro</a>
+                                </button>
+
                             </form>
                         </div>
+
                     </div>
 
                 </div>
@@ -106,14 +116,13 @@
                 <div class="row">
 
                     {{-- SERVIÇO 1 --}}
-                    @foreach ($services as $service)
+                    @forelse ($services as $service)
                         <div class="col-sm-6 col-md-6 col-lg-3">
                             <div class="service-card">
 
                                 <div class="services-cards-all">
                                     {{-- IMAGEM SERVIÇO
                                     --}}
-
 
                                     @if ($service->photo == null)
                                         <img src="{{ asset('/imagens/servicos/servico-3.jpg') }}" alt="service-card Serviço"
@@ -122,8 +131,6 @@
                                         <img src="{{ asset('uploads/services/' . $service->photo) }}" alt="Foto Serviço"
                                             class="photo-service img-fluid">
                                     @endif
-
-
 
                                     {{-- BOTÃO
                                     --}}
@@ -152,12 +159,22 @@
                                             <span class="service-title">Local: </span>
                                             <span class="service-text"> {{ $service->local }}</span>
                                         </div>
+                                        <div class="text-service">
+                                            <span class="service-title">Segmento: </span>
+                                            <span class="service-text"> {{ $service->segment->tipo }}</span>
+                                        </div>
+
                                     </div>
+
                                 </div>
 
                             </div>
                         </div>
-                    @endforeach
+                    @empty
+                        <div class="empresa">
+                            <h2>Segmento não encontrado</h2>
+                        </div>
+                    @endforelse
 
                 </div>
 
@@ -172,5 +189,5 @@
 
 
 @section('footer')
-    @include('layouts.footer-logado')
+@include('layouts.footer-logado')
 @endsection

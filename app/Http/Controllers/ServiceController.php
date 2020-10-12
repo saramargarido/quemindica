@@ -8,6 +8,7 @@ use App\Segment;
 use App\User;
 use App\Post;
 use App\Rating;
+use App\Segments;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Mail;
@@ -23,17 +24,22 @@ class ServiceController extends Controller
     }
 
 
-    public function servicos(User $user)
+    public function servicos(User $user, Request $request)
     {
         $user = Auth::user();
-
-        // $postsUser = Service::all();
-
         $busca = request('busca');
 
         $services = Service::where('servico', 'LIKE', '%' . $busca . '%')->get();
+        
+        $segments = Segment::all();
 
-        return view('users.servicos', compact('user', 'services'));
+        // FILTRO
+        $filtros = $request->get('filtros');
+        $categories = Service::filtros($filtros);
+
+
+
+        return view('users.servicos', compact('user', 'services', 'segments', 'categories'));
     }
 
 

@@ -36,4 +36,23 @@ class Service extends Model
     {
         return $this->hasMany(Rating::class);
     }
+
+
+
+
+
+
+    // FILTRO SEGMENTOS
+    
+    public static function filtros($filtros)
+    {
+        if ($filtros === null) {
+            return Service::all();
+        }
+
+        return Service::whereHas('segment', function ($query) use ($filtros) {
+            $query->whereIn('id', $filtros);
+        })->get();
+
+    }
 }

@@ -133,7 +133,9 @@ class UserController extends Controller
         if (!$user)
             abort(404);
 
+
         // Posts dos usuários
+        
         $postsUser = Post::where(function ($query) use ($user) {
             $query->where('user_id', $user->id)
                 ->orWhere('user_id', $user->id);

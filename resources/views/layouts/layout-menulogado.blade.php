@@ -118,23 +118,6 @@
                 </li> --}}
 
 
-                {{-- ÁREA PESQUISA --}}
-                <li class="nav-item">
-                    <form class="form-inline my-2 my-lg-0 mr-lg-2">
-                        <div class="input-group">
-                            <input class="form-control" type="text" placeholder="Pesquisar">
-                            <span class="input-group-append">
-
-                                <button class="btn search-btn-log" type="button">
-                                    <i class="fa fa-search"></i>
-                                </button>
-
-                            </span>
-                        </div>
-                    </form>
-                </li>
-
-
                 {{-- BOTÃO SAIR --}}
                 <li class="nav-item logout-menu">
 
