@@ -29,6 +29,22 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
         integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/05e16292f5.js" crossorigin="anonymous"></script>
+
+
+    {{-- PIXEL GOOGLE ANALYTICS--}}
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WGSXX4ZD3X"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-WGSXX4ZD3X');
+
+    </script>
 </head>
 
 <body>
